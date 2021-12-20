@@ -1,0 +1,582 @@
+/*====================
+All Settlements Page
+=====================*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.settlement-id {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem !important;
+}
+
+.settlement-page .all-transaction-form .third input {
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+.settlement-page .all-transaction-form .received-section {
+  margin-top: -1rem;
+}
+
+.settlement-page .fa-filter {
+  top: 29.5%;
+}
+.settlement-page .all-transaction-form .received-section select {
+  outline: none;
+  background-color: #2c2c2e;
+  border: none;
+  font-weight: 900;
+  color: #ffffff;
+  padding: 0.2rem;
+}
+.settlement-page .table-striped {
+  color: #ffffff;
+}
+.settlement-page .table-striped thead {
+  background: #0a0a0a;
+  font-weight: 900;
+}
+
+/* .table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #707070;
+   
+ } */
+
+.table-striped > tbody > tr:nth-child(2n + 1) > td,
+.table-striped > tbody > tr:nth-child(2n + 1) > th {
+  background-color: #707070;
+}
+
+.settlement-page .table-striped .badge {
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+#layout-wrapper > div.main-content > div > div > div > nav > div {
+  background: #000000;
+}
+.settlement-id .settlement-id-nav {
+  margin-bottom: -0.7rem;
+}
+
+.settlement-id .settlement-id-nav a {
+  color: #7062e0;
+  font-weight: 900;
+  border-bottom: 2px solid #ffcbc4;
+  font-size: 1rem;
+  line-height: 8px;
+}
+
+.settlement-left-details table td {
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.settlement-left-details-btn {
+  padding: 0.2rem 0;
+  background: #3a955e;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* .settlement-id .settlement-id-details .settlement-right-details .green-ticket{
+    width: 60vw !important;
+} */
+
+.settlement-id .settlement-right-details .green-ticket {
+  width: 40vw !important;
+  text-align: center;
+  border-left: 2px solid #3a955e;
+  border-width: 15px;
+}
+.settlement-id .settlement-right-details .orange-ticket {
+  border-left: 2px solid #7062e0;
+  width: 40vw !important;
+  text-align: center;
+  border-width: 15px;
+}
+
+.settlement-id .show-btn button {
+  background: #3a44a1;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+.settlement-id .first-ticket p,
+.settlement-id .second-ticket span,
+.settlement-id .second-ticket p {
+  color: #ffffff;
+}
+
+.settlement-id a i:hover {
+  background: #707070;
+  padding: 0.5rem;
+}
+
+.settlement-id .second-ticket .orange-ticket {
+  background: #2c2c2e !important;
+}
+
+/*========================
+ Settlements Settings Page
+==========================*/
+
+.settlement-settings .banking-qr {
+  width: 10%;
+}
+
+.settlement-settings .banking-details img {
+  width: 100%;
+}
+
+.settlement-settings .hdfc-img {
+  width: 30%;
+}
+.settlement-settings .banking-details .hdfc-img img {
+  width: 100%;
+}
+
+.settlement-settings .banking-content {
+  width: 70%;
+}
+
+.settlement-settings .banking-details p {
+  /* width: 80%; */
+  color: #ffffff;
+}
+
+.settlement-settings .banking-details .bank p {
+  width: 100%;
+  margin: 0;
+}
+
+.settlement-settings .wallet-section {
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.settlement-settings .wallet-section p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.settlement-settings .wallet-section .phone i,
+.settlement-settings .wallet-section .wallet i {
+  background: black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+.settlement-settings .wallet-section .phone i {
+  padding: 0.5rem 0.8rem;
+}
+
+.qr {
+  width: 50%;
+
+  align-items: center;
+  padding: 2rem;
+}
+.bank {
+  width: 50%;
+
+  align-items: center;
+  padding: 2rem;
+}
+
+.banking-details .banking-qr {
+  width: 20%;
+}
+
+.banking-details .change-btn {
+  background: #3a44a1;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.settlement-settings .settlement-footer {
+  margin-top: 100px !important;
+}
+
+.change-account .change-account-option {
+  margin-top: 2rem;
+}
+
+.change-account .diff-accounts {
+  width: 60%;
+
+  overflow-y: scroll;
+}
+.change-account .change-account-option p {
+  color: #ffffff;
+  font-size: 900;
+}
+.change-account .separate-account p {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.change-account .diff-accounts .separate-account {
+  height: 30%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #2c2c2c;
+}
+.change-account .separate-account .selected-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-account .separate-account .selected-icon i {
+  font-size: 1.7rem;
+  color: #3a955e;
+}
+.change-account .diff-accounts .ac-2 {
+  background: #2c2c2e !important;
+}
+.change-account .diff-accounts .ac-2 i {
+  color: #424242;
+}
+
+.change-account .separate-account {
+  margin: 2rem 0;
+}
+.change-account .diff-accounts .acc-details {
+  width: 100%;
+  align-items: center;
+}
+.change-account .diff-accounts .acc-details p {
+  margin: 0;
+}
+.change-account .diff-accounts .acc-details .bank-logo {
+  display: flex;
+  width: 20%;
+}
+
+.change-account .diff-accounts .acc-details .bank-logo img {
+  display: flex;
+  width: 100%;
+}
+
+.change-account .diff-accounts .save-btn {
+  float: right;
+}
+.change-account .diff-accounts .save-btn button {
+  background: #3a44a1;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.2rem 2.5rem;
+}
+
+.change-account .new-account {
+  text-align: center;
+}
+
+.change-account .new-account p {
+  text-align: start;
+  width: 65%;
+  margin: 0 auto;
+}
+.change-account .new-account button {
+  background: #3a44a1;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.2rem 2rem;
+}
+
+.add-account .add-account-heading p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.add-account .account-form {
+  margin-top: 2rem;
+}
+
+.add-account .account-form .first-row {
+  width: 100% !important;
+}
+.add-account .account-form .first-row input {
+  color: #fff;
+  width: 70%;
+}
+
+.add-account .account-form .second-row {
+  margin-top: 1rem;
+}
+.add-account .account-form label {
+  color: #ffffff;
+  font-weight: 900;
+  margin: 0.5rem;
+}
+.add-account .account-form input {
+  background: #2c2c2e;
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  width: 100%;
+}
+.bank-branch {
+  width: 35% !important;
+}
+
+.add-account .account-form .first-row div {
+  width: 100%;
+}
+/* 
+.add-account .account-form .first-row .div2 {
+  margin-left: 1.5rem;
+} */
+
+.add-account .account-form {
+  width: 100%;
+}
+.add-account .account-form .proceed-btn {
+  /* text-align: right; */
+  margin-top: 2rem;
+}
+
+.add-account .account-form .proceed-btn button {
+  background: #3a44a1;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.2rem 2rem;
+}
+
+.add-account .add-account-right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.add-account .add-account-footer {
+  width: 100%;
+  text-align: right;
+  margin-top: 3rem;
+  font-size: 12px;
+}
+
+/*====================================
+Making All Settlements Page Responsive
+=======================================*/
+
+@media screen and (max-width: 720px) {
+  .all-transaction-form .all-settlements-form .tran-form-btn {
+    width: 100%;
+  }
+
+  .settlement-page .settlement-table {
+    overflow-x: scroll;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .all-transaction-form .all-settlements-form {
+    display: block !important;
+  }
+  .all-transaction-form .all-settlements-form .tran-form-btn {
+    width: 50%;
+  }
+  .all-transaction-form .all-settlements-form .received-section {
+    padding: 1rem 0;
+
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  .all-transaction-form .all-settlements-form .received-section div {
+    display: block !important;
+    margin: 0.5rem 0;
+  }
+}
+
+/*=========================================
+Making Settlements Settings Page Responsive
+============================================*/
+
+@media screen and (max-width: 720px) {
+  .settlement-settings .banking-content,
+  .settlement-settings .wallet-section {
+    display: block !important;
+
+    width: 100%;
+  }
+  .settlement-settings .banking-content div,
+  .settlement-settings .wallet-section div {
+    width: 100%;
+  }
+
+  .settlement-settings .banking-details .first-banking-details {
+    display: block !important;
+  }
+  .settlement-settings .banking-content .banking-qr {
+    align-items: center;
+    width: 20% !important;
+  }
+  .settlement-settings .banking-content .bank .hdfc-img {
+    width: 30% !important;
+  }
+
+  .settlement-settings .wallet-section .phone,
+  .settlement-settings .wallet-section .wallet {
+    width: 40%;
+  }
+
+  /*=========================================
+       Change Account Responsive
+============================================*/
+  .accounts-holder-div {
+    flex-direction: column;
+  }
+  .accounts-holder-div .new-account {
+    margin: 0;
+  }
+
+  .change-account .diff-accounts {
+    width: 100% !important;
+  }
+  /*=========================================
+              Add New Account Responsive
+    ============================================*/
+
+  .add-account .add-account-holder {
+    display: block !important;
+  }
+  .add-account .account-form .first-row {
+    display: block !important;
+    width: 100% !important;
+  }
+  .add-account .account-form {
+    width: 100% !important;
+  }
+  .add-account .account-form .first-row .div2 {
+    margin-left: 0;
+  }
+  .add-account .account-form .first-row input {
+    height: 10px;
+    padding: 1.5rem 2rem;
+  }
+  .add-account .add-account-right-content {
+    display: block;
+    width: 100% !important;
+  }
+  .add-account .add-account-right-content div {
+    margin: 2rem 0;
+
+    text-align: center;
+  }
+  .add-account .account-form .first-row input {
+    width: 100%;
+  }
+  .bank-branch {
+    width: 100% !important;
+    color: #fff;
+    padding: 0.5rem 2rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .add-account .add-account-right-content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .settlement-id-details {
+    flex-direction: column !important;
+  }
+  #layout-wrapper
+    > div.main-content
+    > div
+    > div:nth-child(2)
+    > div
+    > div.settlement-id-details.d-flex
+    > div.settlement-right-details
+    > div
+    > div.first-ticket
+    > div
+    > div.green-ticket.w-100.my-2.pt-2 {
+    width: 100% !important;
+  }
+  #layout-wrapper
+    > div.main-content
+    > div
+    > div
+    > div
+    > div.settlement-id-details.d-flex
+    > div.settlement-right-details
+    > div
+    > div.second-ticket
+    > div
+    > div {
+    width: 100% !important;
+  }
+  #layout-wrapper
+    > div.main-content
+    > div
+    > div:nth-child(2)
+    > div
+    > div.settlement-id-details.d-flex
+    > div.settlement-right-details
+    > div
+    > div.first-ticket
+    > div
+    > div.d-flex.justify-content-start {
+    margin-top: 1rem !important;
+  }
+  .change-account .diff-accounts .separate-account {
+    padding: 1.5rem;
+  }
+
+  .add-account .add-account-holder {
+    width: 100% !important;
+  }
+
+  /* Pagination style */
+}
+.paginationBttns {
+  display: block;
+  width: 80%;
+  height: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 6px;
+  border-radius: 5px;
+  color: #0371e3;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white !important;
+  background-color: #0371e3;
+}
+
+.paginationActive a {
+  color: white !important;
+  background-color: #0371e3;
+}
+
+.paginationDisabled a {
+  color: #6c757d;
+  background-color: #eff2f7;
+}

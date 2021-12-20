@@ -1,0 +1,270 @@
+/*===================
+All Transaction Page
+=================== */
+
+.transaction-page {
+  margin: 5.5rem 1rem;
+  margin-bottom: 5rem;
+  background: #1d1d1f;
+  padding: 0;
+}
+
+.transaction-page .transaction-links {
+  width: 100%;
+  /* height: 60%; */
+  margin-top: -6.7rem;
+}
+
+.transaction-page .transaction-links ul {
+  margin: 0;
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: 1px solid #2c2c2c;
+  z-index: 999;
+}
+
+.transaction-page .transaction-links li {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: -3.5rem;
+  transition: ease-in-out 0.3s;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+
+.transaction-page .transaction-links li a {
+  color: #ffffff;
+  transition: border-width 0.3s linear;
+  text-align: center;
+  line-height: 3.2rem;
+  padding: 1.15rem;
+}
+
+.transaction-page .transaction-links li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #ffcbc4;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  color: #7062e0;
+}
+
+.transaction-page .transaction-links li:hover:after {
+  transform: scaleX(1);
+}
+.transaction-page .transaction-links li:hover a {
+  color: #7062e0;
+}
+
+/* .transaction-page .transaction-links {
+  display: flex;
+  justify-content: space-between;
+}
+.transaction-page .transaction-links .transaction-icon-links {
+  border: 2px solid #000000 !important;
+  border-radius: 5px;
+}
+
+.transaction-page .transaction-links .transaction-icon-links div {
+  color: #5c606a;
+}
+.transaction-page .transaction-links .transaction-icon-links .first-div {
+  border-right: 2px solid #000000;
+}
+.transaction-page .transaction-links .transaction-icon-links div:hover {
+  cursor: pointer;
+  border: 2px solid #9fc3d4;
+  color: #9fc3d4;
+} */
+/* .transaction-page .all-transaction-form{
+    background-color: red;
+} */
+/* .transaction-page .all-transaction-form {
+  background: red;
+} */
+
+.transaction-page .all-transaction-form input {
+  outline: none;
+  background: #2c2c2e;
+  border: none;
+  height: 70%;
+  color: #ffffff;
+  width: 15vw;
+  padding: 0 1rem;
+}
+.transaction-page .all-transaction-form select {
+  color: #fff;
+}
+
+.transaction-page .all-transaction-form .third input {
+  height: 50%;
+}
+.transaction-page .first .date-input {
+  margin-right: 0.1rem;
+}
+.first select {
+  width: 12vw !important;
+  margin-top: 0.5rem;
+  margin: 0 0.1rem;
+}
+.first input,
+.first select {
+  border-radius: 5px;
+  height: 35px !important;
+  width: 100% !important;
+  /* width: 30px; */
+}
+
+/* .transaction-page .second .email-input {
+  width: 20.5vw;
+} */
+.transaction-page .all-transaction-form .second select,
+.first select {
+  outline: none;
+  background-color: #2c2c2e;
+  border: none;
+  width: 15vw;
+  height: 70%;
+  color: #5c606a;
+  border-radius: 5px;
+}
+.transaction-page .all-transaction-form label {
+  font-weight: 900;
+  color: #ffffff;
+}
+.transaction-page .all-transaction-form div {
+  margin: 0.5rem;
+}
+
+.transaction-page .all-transaction-form .search-btn button {
+  background: #3a44a1;
+  color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0.4rem 3rem;
+  font-weight: 900;
+}
+.transaction-page .all-transaction-form .clear-btn button {
+  background: #5c606a;
+  color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0.4rem 1.5rem;
+  font-weight: 900;
+}
+.fa-filter:before {
+  position: absolute;
+  left: 90%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+  /* .fa-filter:before { 
+  position: absolute;
+  top: 24%;
+  right: 55%; 
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+  margin-top: -10rem;
+}  */
+.transaction-page .tran-form-btn {
+  margin-top: 1.8rem !important;
+  justify-content: start;
+
+  padding: 0 0.5rem;
+}
+.transaction-page .tran-form-btn .search-btn {
+  margin-left: 0;
+}
+.transaction-page .amount-and-transaction {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  /* background: red; */
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.transaction-page .amount-and-transaction div {
+  text-align: center;
+  /* background: #2c2c2c; */
+  border: 2px solid #333747;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.transaction-page .amount-and-transaction div h5 {
+  font-size: 0.9rem;
+}
+.transaction-page .amount-and-transaction div h2 {
+  font-size: 1.2rem;
+  color: #0071e3;
+  font-weight: 700;
+}
+
+/*===================================
+Making All Transaction Page Responsive
+====================================== */
+
+@media screen and (max-width: 720px) {
+  .transaction-page .transaction-links .transaction-text-links li {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .transaction-links .transaction-icon-links {
+    display: none !important;
+  }
+  .transaction-page .transaction-links ul {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .transaction-page .transaction-links ul li {
+    width: 220px;
+    padding: 0;
+    text-align: center;
+  }
+  .transaction-page .transaction-links ul li a {
+    padding: 2rem 1rem;
+  }
+  .transaction-page .transaction-links .transaction-text-links li {
+    display: flex;
+  }
+  .all-transaction-form .first,
+  .all-transaction-form .second,
+  .all-transaction-form .third {
+    display: block;
+  }
+  .all-transaction-form .first input,
+  .transaction-page .all-transaction-form .second input,
+  .all-transaction-form .third input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .transaction-page .all-transaction-form .second select,
+  .transaction-page .all-transaction-form .first select {
+    width: 100% !important;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+  }
+  .transaction-page .all-transaction-form .tran-form-btn {
+    justify-content: space-between;
+  }
+  .latest-transaction-row {
+    overflow-x: scroll;
+  }
+  .transaction-page .all-transaction-form div {
+    flex-direction: column;
+    margin: 0;
+  }
+  .transaction-page .all-transaction-form div label {
+    margin: 0.5rem 0;
+  }
+  .transaction-page .tran-form-btn {
+    flex-direction: row !important;
+  }
+}

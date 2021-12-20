@@ -1,0 +1,12 @@
+.ri-menu-3-line:before {
+  visibility: hidden ;
+}
+
+@media screen and (max-width: 993px) {
+  .ri-menu-3-line:before {
+    visibility: visible;
+    color: "#7062e0";
+  }
+}
+
+

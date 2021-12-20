@@ -1,0 +1,129 @@
+.category-products {
+  width: 80%;
+}
+
+.category-products .main-products {
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.category-products .main-products .main-product-img {
+  padding: 3rem 2rem;
+  border-radius: 25%;
+  border: 2px solid #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  height: 65%;
+}
+
+.category-products .main-products .main-product-img img {
+  width: 70%;
+}
+
+.main-products .main-product-details p {
+  margin: 0;
+  color: #ffffff;
+}
+#layout-wrapper
+  > div.main-content
+  > div
+  > div.category-page
+  > div.product-stock
+  > table
+  > tbody
+  > tr:nth-child(n)
+  > td.img
+  > a
+  > img {
+  width: 50%;
+}
+#layout-wrapper
+  > div.main-content
+  > div
+  > div.category-page
+  > div.product-stock
+  > table
+  > tbody
+  > tr:nth-child(n)
+  > td.img {
+  width: 10%;
+}
+#layout-wrapper
+  > div.main-content
+  > div
+  > div.category-page
+  > div.product-stock
+  > table
+  > thead {
+  color: #ffffff;
+}
+/* .main-products .active {
+  background: #000000;
+} */
+
+/* ===============================
+  Making Category Page Responsive
+================================== */
+
+@media screen and (max-width: 760px) {
+  .category-page .add-products .add-product-form {
+    display: block !important;
+    margin-top: 5rem !important;
+    margin-bottom: 3rem;
+    width: 100% !important;
+  }
+  .category-page .add-products .add-product-form div {
+    margin: 1rem 0;
+  }
+  .category-page .add-products .add-product-form .select-div select {
+    margin-left: 0 !important;
+  }
+  .category-page .add-products .add-product-form .add-filter {
+    margin-left: 0 !important;
+    float: right;
+    margin-top: -13%;
+  }
+
+  .category-page .category-products {
+    display: block !important;
+
+    width: 100% !important;
+    margin-top: 4rem;
+  }
+  .category-page .category-products div {
+    width: 70% !important;
+    margin: 0 auto;
+  }
+  .category-page .category-products .main-products .main-product-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .category-page .category-products .main-products .main-product-details {
+    padding: 1rem 0;
+  }
+  .category-page .product-stock {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .category-page .category-products .main-products .main-product-img img {
+    width: 2rem;
+  }
+
+  .category-page .category-products {
+    width: 100% !important;
+    display: flex !important;
+    overflow-x: scroll;
+  }
+  .category-page .category-products div {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .category-page .add-products .add-product-form .add-filter {
+    width: 30%;
+  }
+}

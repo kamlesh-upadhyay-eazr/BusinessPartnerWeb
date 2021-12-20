@@ -1,0 +1,272 @@
+/* ====================
+  Manage QR Code Style
+  ===================== */
+
+/* ========================
+    Manage QR Code Left Side
+    ======================== */
+
+.d-flex {
+  /* display: flex; */
+  overflow-y: scroll;
+}
+
+.manage-qr-page .qr-info .qr-left-info {
+  background: #000000;
+  width: 80%;
+  padding: 3.5rem 0.5rem;
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+
+.manage-qr-page .qr-info .qr-left-info .qr-left-info-logo {
+  text-align: center;
+}
+.manage-qr-page .qr-info .qr-left-info .qr-left-info-logo img {
+  width: 20%;
+  margin: 0.5rem 0;
+}
+.manage-qr-page .qr-info .qr-left-info .qr-code-div {
+  text-align: center;
+  padding: 1rem 0;
+}
+.manage-qr-page .qr-info .qr-left-info .qr-code-div img {
+  width: 50%;
+}
+
+.manage-qr-page .qr-info .qr-left-info .upi-id {
+  color: #ffffff;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.manage-qr-page .qr-info .qr-left-info .store-type {
+  margin: 1rem 0;
+
+  padding: 0.5rem 0;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid #5c606a;
+  border-top: 1px solid #5c606a;
+}
+.manage-qr-page .qr-info .qr-left-info .store-type h6 {
+  text-align: center;
+  color: #7062e0;
+  font-size: 1rem;
+}
+.manage-qr-page .qr-info .share-qr-btn {
+  width: 80%;
+
+  text-align: center;
+
+  margin: 0 auto;
+}
+.manage-qr-page .qr-info .share-qr-btn button {
+  background: #2c2c2e;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+/* ========================
+  Manage QR Code Right Side
+  ========================== */
+
+.manage-qr-page .right-qr-info {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.manage-qr-page .right-qr-info .select-qr-name {
+  display: flex;
+  justify-content: space-between;
+}
+.manage-qr-page .right-qr-info .select-qr-name select {
+  background: #2c2c2e;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.manage-qr-page .right-qr-info .download-qr-btn button {
+  background: #7062e0;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 0.2rem;
+}
+.manage-qr-page .right-qr-info .download-qr-btn i {
+  background: #5c606a;
+  padding: 0.8rem 0.4rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+
+.manage-qr-page .edit-qr-details {
+  align-items: center;
+}
+.manage-qr-page .edit-qr-details .qr-details {
+  color: #ffffff;
+  font-weight: 900;
+}
+.manage-qr-page .edit-qr-details .edit-btn button {
+  background: #5c606a;
+  color: #9fc3d4;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+.manage-qr-page .display-name {
+  background: #000000;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.manage-qr-page input {
+  background: #000000;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  margin: 0.5rem 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.manage-qr-page .right-qr-info .upi-list {
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  /* padding-bottom: 0; */
+}
+.manage-qr-page .right-qr-info .upi-list:nth-child(odd) {
+  background: #2c2c2e;
+}
+.manage-qr-page .right-qr-info .upi-list .upi-name {
+  align-items: center;
+
+  display: flex;
+}
+
+.manage-qr-page .right-qr-info .upi-list .delete-upi {
+  align-items: center;
+  margin: 0;
+}
+.manage-qr-page .right-qr-info .upi-list .delete-upi:hover {
+  cursor: pointer;
+}
+.manage-qr-page .right-qr-info .upi-list .delete-upi p {
+  color: #dd5c64;
+  margin: 0;
+}
+.manage-qr-page .right-qr-info .upi-list .delete-upi i {
+  color: #9fc3d4;
+  background: #1d1d1f;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  margin: 0;
+}
+
+/* ========================
+         Add Upi Style
+  ========================== */
+.add-upi-page {
+  height: 100vh;
+}
+.add-upi-page .upi-input {
+  padding: 0 3rem;
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.add-upi-page .upi-input input {
+  background: #2c2c2e;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  width: 80%;
+  border-radius: 5px;
+  color: #fff;
+}
+.add-upi-page .qr-scan-btn {
+  padding: 1rem 1.5rem;
+  background: #000000;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.add-upi-page .qr-scan-btn i {
+  margin: 0 auto;
+}
+.add-upi-page .add-upi-btn button {
+  padding: 0.3rem 3rem;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #3a44a1;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .manage-qr-page .qr-info {
+    display: block !important;
+  }
+  .manage-qr-page .qr-code {
+    width: 100% !important;
+    padding: 0;
+  }
+  .manage-qr-page .right-qr-info {
+    width: 100% !important;
+    padding: 0;
+  }
+  .manage-qr-page .select-qr-name {
+    display: block !important;
+  }
+  .manage-qr-page .select-qr-name div {
+    width: 100% !important;
+  }
+  .manage-qr-page .select-qr-name div select {
+    margin-bottom: 1rem;
+  }
+  .manage-qr-page .qr-info .qr-left-info {
+    width: 100%;
+  }
+  .manage-qr-page .qr-info .share-qr-btn {
+    width: 100%;
+  }
+
+  .add-upi-page .upi-input {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .add-upi-page .upi-input input {
+    width: 100%;
+  }
+  .add-upi-page .add-upi-btns {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 1rem 0;
+  }
+  .add-upi-page div {
+    margin-left: 0 !important;
+  }
+}

@@ -1,0 +1,525 @@
+.available-orders {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.available-orders .display-orders {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.available-orders .display-orders i {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.available-orders .display-orders p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.my-orders .add-products select {
+  width: 60%;
+  border-radius: 5px;
+  outline: none;
+}
+.my-orders .add-products input {
+  width: 300px;
+  height: 35px;
+}
+
+.my-orders .add-product-form {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  /* background: rebeccapurple; */
+}
+
+.my-orders .single-order {
+  background: #000000;
+  /* height: 30vh; */
+  border-radius: 5px;
+  padding: 0.5rem 0;
+}
+
+.single-order .single-order-heading {
+  width: 100%;
+  padding: 0.7rem 2rem;
+}
+.single-order .single-order-heading h6 {
+  margin: 0;
+}
+.single-order .single-order-heading p {
+  color: #c0c0c0;
+  margin: 0.2rem 0;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+.single-order hr {
+  margin: 0;
+}
+.single-order .single-order-heading .badge {
+  background: #3a44a1;
+  text-align: center;
+  color: #ffffff;
+}
+/* .single-order .order-items {
+
+  padding-bottom: 1rem;
+} */
+.single-order .order-items .items p {
+  width: 20%;
+  color: #ffffff !important;
+  background: none;
+}
+.single-order .order-items .items {
+  /* padding: 1rem 0 0 1rem; */
+  padding-left: 0.8rem;
+}
+
+.single-order .order-items {
+  width: auto;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  /* background: white; */
+}
+
+.single-order .order-items p {
+  background: #2c2c2e;
+  color: #eeeeee;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  margin: 0 0.2rem;
+}
+
+.single-order .order-items .items p {
+  background: none;
+}
+.single-order .order-items p:nth-child(odd) {
+  background: #1c1c1e;
+}
+.single-order .order-items .items p {
+  background: none !important;
+}
+
+.single-order .order-info p {
+  margin: 0;
+  color: #ffffff;
+}
+.single-order .order-info span {
+  color: #c0c0c0;
+}
+
+.single-order .order-info {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.single-order .order-item-otp p {
+  color: #ffffff;
+}
+.single-order .order-item-otp span {
+  color: #7062e0;
+}
+.single-order .order-info .order-items-btn {
+  width: 26%;
+  justify-content: space-between;
+}
+.single-order .order-info .view-btn button,
+.single-order .order-info .accept-btn button {
+  border: none;
+  outline: none;
+  background: #444348;
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.single-order .order-info .accept-btn button {
+  background: #3a955e;
+}
+
+.single-order:nth-child(even) {
+  background: #2c2c2e;
+}
+
+.single-order .order-timer {
+  background: #1c1c1c;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+.single-order .order-timer h5 {
+  margin: 0;
+}
+
+/* ==================
+  View Modal Section 
+  ===================*/
+
+/* View button to open modal */
+
+#layout-wrapper
+  > div.main-content
+  > div
+  > div:nth-child(n)
+  > div.order-info.d-flex.justify-content-between
+  > div.order-items-btn.d-flex
+  > div.view-btn
+  > div
+  > button {
+  color: #ffffff !important;
+}
+
+.view-order-modal-main-div button {
+  color: #fff !important;
+}
+
+/* Changing background of Modal */
+
+.view-modal .modal-content {
+  background-color: #1c1c1e !important;
+  border: none;
+}
+
+/* Styling the modal header */
+
+.view-modal-header {
+  width: 100%;
+}
+/* .view-modal-header-img {
+  width: 10%;
+  margin: 0;
+} */
+.modal-header-img img {
+  width: 70% !important;
+}
+.modal-order-details {
+  width: 100%;
+}
+.modal-order-details .user-details .user-info p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+.modal-order-details .user-details .user-info h6 {
+  margin: 0;
+}
+.reject-order button {
+  outline: none;
+  border: none;
+  padding: 0.4rem 1rem;
+  background: #dd5c64;
+  font-size: 0.8rem;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.modal-order-details .order-details p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+.modal-order-details .order-details h6 {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.modal-header-img {
+  width: 25%;
+}
+
+.view-modal-transaction-type p {
+  background: #3a44a1;
+  border-radius: 2px;
+  text-align: center;
+}
+
+/* Styling View Modal Body */
+
+.view-modal-body {
+  display: flex;
+}
+
+/* 
+Styling View Modal left side body */
+
+.view-modal-left-body-side {
+  /* background: red; */
+  width: 60% !important;
+  padding: 0 1rem;
+  border-right: 1px solid #5c606a;
+}
+.view-modal-right-body-side {
+  width: 40% !important;
+}
+
+.view-modal-delivery-address {
+  width: 100%;
+  /* background: yellow; */
+}
+
+.view-modal-delivery-address-heading h6 {
+  font-size: 0.8rem;
+  color: #9fc3d4;
+}
+
+.view-modal-delivery-address p {
+  color: #ffffff;
+  font-size: 0.7rem !important;
+}
+.view-modal-delivery-address span {
+  color: #7062e0;
+  font-size: 0.7rem;
+}
+
+.view-modal-left-body-side .ordered-item-name {
+  width: 50%;
+}
+.view-modal-left-body-side .ordered-item-qty {
+  width: 10%;
+  border-right: 1px solid #707070;
+}
+
+.view-modal-left-body-side .ordered-item-cost {
+  width: 10%;
+  text-align: center;
+}
+
+.view-modal-ordered-items-header h6 {
+  font-size: 0.8rem;
+  color: #9fc3d4;
+}
+
+.view-modal-ordered-items p {
+  color: #ffffff;
+}
+
+.view-modal-additional-info h6 {
+  font-size: 0.8rem;
+  color: #c0c0c0;
+}
+.view-modal-additional-info p {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+/* 
+Styling View Modal Right side body */
+
+.view-modal-right-other-details-heading h6,
+.view-modal-right-transaction-details-heading h6 {
+  color: #9fc3d4;
+  font-size: 0.8rem;
+}
+
+.view-modal-right-other-details p,
+.view-modal-right-transaction-details p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.view-modal-right-transaction-details-total-amount span {
+  color: #3a955e !important;
+  font-weight: 900 !important;
+}
+
+.view-modal-right-accept-order-btn {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.view-modal-right-accept-order-btn button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 3rem;
+  background: #3a955e;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+/* ==================
+  All Order Table Style 
+  ===================*/
+
+#layout-wrapper
+  > div.main-content
+  > div
+  > div.mt-5
+  > table
+  > tbody
+  > tr:nth-child(1)
+  > td.d-flex.justify-content-between {
+  border-top: none;
+}
+
+/* ==================
+ Completed Table Style 
+  ===================*/
+
+/* Customer Rating styling */
+.my-orders .table-customer-rating span a {
+  border-radius: 5px;
+  font-size: 0.8rem;
+  /* background: #FFD341; */
+  padding: 0 1rem !important;
+  /* padding-bottom: 0; */
+  /* color: #ffd341 !important; */
+  margin-top: -1rem;
+  /* border: 1px solid #ffd341; */
+  font-weight: 900;
+  /* background: #635b34; */
+  /* background: #45433b; */
+}
+
+/* ==================
+  Delivery Status Style 
+  ===================*/
+
+.my-orders .delivery-status {
+  background: #424242;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.my-orders .delivery-status .delivery-status-header {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.my-orders .delivery-status .delivery-status-header h6 {
+  font-size: 0.8rem;
+}
+
+.my-orders .delivery-status .delivery-status-details {
+  display: flex;
+
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-orders .delivery-status .delivery-status-details p {
+  color: #c0c0c0;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+.my-orders .delivery-status .delivery-status-details h6 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.my-orders .delivery-status .delivery-status-details .bordered-div {
+  padding-right: 3rem;
+  border-right: 0.5px solid #707070;
+}
+
+.my-orders-links {
+  max-width: 400px !important;
+}
+
+/* ============================
+  Making Page Mobile Responsive 
+  =============================*/
+
+@media screen and (max-width: 761px) {
+  .add-products .add-product-form {
+    display: block !important;
+    width: 100%;
+    padding: 0 !important;
+    margin-top: 3rem;
+  }
+  .add-products .add-product-form div {
+    margin-left: 0 !important;
+
+    padding: 0.5rem 0;
+  }
+  .add-products .add-product-form div select {
+    margin: 0 !important;
+  }
+
+  .single-order {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* .my-orders {
+    overflow-x: scroll;
+  } */
+  .single-order .order-timer {
+    margin-right: 0 !important;
+    width: 70px;
+    text-align: center;
+  }
+
+  .single-order .order-items {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 !important;
+  }
+  .view-modal-right-other-details-heading h6,
+  .view-modal-right-transaction-details-heading h6 {
+    padding-left: 1rem;
+  }
+  .view-modal-right-other-details p,
+  .view-modal-right-transaction-details p {
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+  .view-modal-ordered-items p {
+    font-size: 0.8rem;
+  }
+  .view-modal-right-accept-order-btn button {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 2px;
+  }
+  .completed-order-table {
+    overflow-x: scroll;
+  }
+  /* .my-orders .transaction-page .transaction-links ul li {
+    width: 300px !important;
+  } */
+}
+
+@media (max-width: 450px) {
+  .single-order {
+    width: 100%;
+  }
+  .single-order .single-order-heading {
+    width: 300%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #424242;
+  }
+  .single-order .ordered-items {
+    width: 290%;
+  }
+
+  .single-order .order-timer h5 {
+    font-size: 0.9rem;
+  }
+  .single-order .order-info {
+    width: 300%;
+  }
+  .single-order .order-items-btn {
+    width: 35% !important;
+  }
+  .transaction-text-links {
+    overflow-x: scroll;
+  }
+  .transaction-text-links ul {
+    width: 200% !important;
+  }
+}

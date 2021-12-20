@@ -1,0 +1,104 @@
+/* ============================
+    Main Reports page Styling
+    =========================== */
+
+.reports-page .report-page-info {
+  color: #ffffff;
+}
+
+.reports-page .select-report-type {
+  background: #000000;
+  width: 70%;
+  padding: 1rem;
+  border-left: 2px solid #7062e0;
+  border-width: 5px;
+  margin: 1rem 0;
+}
+.reports-page .select-report-type .select-report-heading {
+  color: #ffffff;
+}
+
+.reports-page .select-report-type .report-option {
+  margin: 1rem 0;
+}
+
+.reports-page .select-report-type .report-option select,
+.reports-page .report-page-form .input-field-div select {
+  background: #2c2c2e;
+  border-radius: 5px;
+  color: #fff; /*#5c606a;*/
+  outline: none;
+  border: none;
+  width: 35%;
+  padding: 0.3rem 0.5rem;
+}
+.reports-page .select-report-type .report-desc {
+  color: #7062e0;
+}
+
+.reports-page .report-page-form {
+  width: 50%;
+}
+.reports-page .report-page-form .input-field-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reports-page .report-page-form .input-field-div select {
+  width: 100%;
+}
+.reports-page .report-page-form .input-field-div label {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.reports-page .report-page-form .input-field {
+  width: 50%;
+  padding: 1rem;
+}
+.reports-page .generate-btn {
+  padding: 1rem;
+}
+.reports-page .generate-btn button {
+  background: #3a44a1;
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.reports-page .recent-report {
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: 900;
+  background: #0a0a0a;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .reports-page .select-report-type {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .reports-page .report-page-form .input-field-div {
+    display: block;
+  }
+  .reports-page .report-page-form {
+    width: 100%;
+  }
+  .reports-page .report-page-form .input-field {
+    width: 100%;
+  }
+  .reports-page .report-page-form .input-field select {
+    height: 40px !important;
+  }
+  .reports-page .select-report-type .report-option select {
+    width: 100%;
+  }
+}

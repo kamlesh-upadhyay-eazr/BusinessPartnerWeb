@@ -1,0 +1,242 @@
+/* ============================
+    Configuration Page Style 
+    ==========================*/
+
+.settings-page .settings-option {
+  padding: 0 3rem;
+  padding-top: 3rem;
+  width: 45%;
+}
+
+.settings-page .settings-option .theme-settings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-page .settings-option .theme-settings .color-hash-code p {
+  background: #2c2c2e;
+  color: #9fc3d4;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border-left: 1px solid #9fc3d4;
+  border-width: 40px;
+}
+.settings-page .settings-option .theme-settings .save-changes-btn button {
+  outline: none;
+  border: none;
+  background: #3a44a1;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.settings-page .settings-option .image-selection-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-page .settings-option .image-selection-div .company-logo p {
+  background: #2c2c2e;
+  width: 170px;
+  height: 150px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-page .settings-option .image-selection-div .company-logo img{
+    width: 170px;
+  height: 150px;
+  border-radius: 2rem;
+}
+.settings-page .settings-option .image-selection-div .choose-logo-btn label {
+  background: #3a44a1;
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  font-weight: 900;
+}
+.settings-page .footer-note {
+  padding: 0 3rem;
+}
+.settings-page .footer-note p {
+  background: #000000;
+  width: 60%;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  color: #ffffff;
+}
+
+/* ============================
+    API Keys Page Style 
+    ==========================*/
+
+.api-keys-page .api-page-content {
+  padding: 0 3rem;
+  padding-top: 3rem;
+  height: 100vh;
+}
+.api-keys-page .api-page-content .api-list-table {
+  margin-top: 2rem;
+}
+
+.api-keys-page .api-page-content .api-list-table thead {
+  background: #000000;
+}
+.api-keys-page .api-page-content .api-list-table th {
+  color: #ffffff;
+}
+.api-keys-page .api-page-content .api-list-table td {
+  color: #c0c0c0;
+  align-items: center;
+}
+.api-keys-page .api-page-content .api-list-table td button {
+  outline: none;
+  border: none;
+  background: #3a44a1;
+  color: #ffffff;
+  padding: 0.3rem 2rem;
+  border-radius: 5px;
+}
+
+/* ============================
+    Store Hours Page Style 
+    ==========================*/
+
+.store-hours-page .store-hour-content {
+  padding: 0 3rem;
+  padding-top: 3rem;
+}
+.store-hours-page .store-hour-table {
+  background: #2c2c2e;
+  padding: 0 1rem;
+}
+
+.store-hours-page .store-hour-table .store-hour-table-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.store-hour-table-content .checkbox-td input[type="checkbox"] {
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  background: #444348;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #999999;
+}
+.store-hour-table-content .checkbox-td input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 0.5rem;
+  color: #fff;
+  display: none;
+}
+
+.store-hour-table-content .checkbox-td input[type="checkbox"]:checked {
+  background: #0070e1;
+  border: none;
+}
+
+.store-hour-table-content .checkbox-td input[type="checkbox"]:checked::after {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.1rem;
+}
+
+.store-hours-page .store-hour-table input,
+.store-hours-page .store-hour-table select {
+  background: #1c1c1e;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+
+.store-hours-page .store-hour-table .store-hour-table-content span {
+  color: #7062e0;
+}
+.store-hours-page .store-hour-table .store-hour-table-content p {
+  color: #9fc3d4;
+}
+
+.store-hours-page .store-hour-table .store-hour-table-content .checkbox-td {
+  width: 15%;
+}
+.store-hour-save-btn {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.store-hour-save-btn button {
+  background: #3a44a1;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.store-hours-page .store-hour-content .store-hour-table-content select {
+  font-size: 0.8rem !important;
+}
+
+@media (max-width: 500px) {
+  .settings-page .settings-option {
+    width: 100%;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  .settings-page .theme-settings {
+    width: 100% !important;
+  }
+
+  .settings-page .logo-selection-div {
+    width: 50% !important;
+  }
+  .settings-page .logo-selection-div .choose-logo-btn {
+    margin-left: 0 !important;
+  }
+  .settings-page .logo-selection-div .max-file-size {
+    margin-left: 0 !important;
+  }
+  .settings-page .footer-note {
+    padding: 0;
+  }
+  .settings-page .footer-note p {
+    width: 100%;
+    padding: 1rem;
+  }
+  .api-keys-page .api-page-content {
+    padding: 0;
+    overflow-x: scroll;
+    padding-top: 1rem;
+  }
+  .api-keys-page .api-page-content .api-list-table td button {
+    padding: 0.5rem 1rem;
+  }
+  .store-hours-page .store-hour-content {
+    padding: 0;
+    padding-top: 3rem;
+    overflow-x: scroll !important;
+  }
+  .settings-page .settings-option .theme-settings .save-changes-btn button,
+  .settings-page .settings-option .image-selection-div .choose-logo-btn label {
+    padding: 0.5rem 1rem;
+  }
+  .settings-page .settings-option .image-selection-div .choose-logo-btn label,
+  .settings-page .logo-selection-div .max-file-size {
+    margin-left: 1.5rem !important;
+  }
+}

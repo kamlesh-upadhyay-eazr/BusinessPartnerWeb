@@ -1,0 +1,9 @@
+.sidebar-toggler {
+    
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar-toggler {
+    color: "#7062e0";
+  }
+}

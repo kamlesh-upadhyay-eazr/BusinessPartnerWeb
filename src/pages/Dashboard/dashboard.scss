@@ -1,0 +1,40 @@
+@import "../../theme.scss";
+
+.apexcharts-canvas {
+  text {
+    fill: $text-muted !important;
+  }
+}
+
+.all-transaction-btn {
+  text-align: center;
+}
+
+.badge {
+  padding: 5px;
+  color: #fff;
+}
+
+.all-transaction-btn button {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  background: #3a44a1;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.latest-transaction-table {
+  color: #fff;
+}
+
+.dashboard-mini-widgets p {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .transaction-table-row {
+    overflow-x: scroll;
+  }
+}

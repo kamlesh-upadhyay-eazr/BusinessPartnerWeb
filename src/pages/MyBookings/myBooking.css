@@ -1,0 +1,37 @@
+.pin-modal {
+  background: #1c1c1c;
+  padding: 2rem 0 !important;
+}
+.pin-modal-div .pin-modal-button {
+  padding: 0.4rem 2rem;
+  background: #3a44a1;
+  border: none;
+  outline: none;
+}
+.pin-modal .modal-pin-form {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+.pin-modal .modal-pin-form input {
+  width: 15%;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  background: #000;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  margin: 1rem 0;
+}
+
+.pin-modal button {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background: #3a44a1;
+}

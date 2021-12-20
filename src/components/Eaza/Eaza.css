@@ -1,0 +1,238 @@
+.eaza-icon{
+  width: 60px;
+  background: #0371e3;
+  padding: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+  transition: ease 1s;
+}
+.eaza-icon:hover{
+  transform: rotate(360deg);
+}
+.eaza-icon img{
+  width: 100%;
+}
+@keyframes fade_in_show {
+     0% {
+          opacity: 0;
+          transform: scale(0)
+     }
+
+     100% {
+          opacity: 1;
+          transform: scale(1)
+     }
+}
+
+@keyframes fade_out {
+     0% {
+          opacity: 1;
+          transform: scale(1)
+     }
+
+     100% {
+          opacity: 0;
+          transform: scale(0)
+     }
+}
+.eaza-container{
+    height: 520px;
+    width: 350px;
+    background: #fff;
+    border-radius: 16px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.fade_in_show{
+    animation: fade_in_show 0.5s ;
+}
+
+.fade_out{
+ animation: fade_out 0.5s;
+}
+.eaza-container .eaza-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 16px;
+
+}
+.eaza-container .eaza-header h5 ,.eaza-container .eaza-header  p{
+  margin: 0;
+  color: #000;
+}
+
+.eaza-container .eaza-header .fa-times {
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 20px;
+  border: 1px solid #bbbbbb;
+  color: #000;
+  cursor: pointer;
+}
+
+
+ .eaza-container .eaza-header .eaza-status{
+  position: absolute;
+   margin: 0;
+   padding-top: 1rem;
+   left: 25%;
+ }
+
+ .eaza-container .eaza-header .eaza-avatar {
+
+    width: 40px;
+
+ }
+  .eaza-container .eaza-header .eaza-avatar img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .eaza-container .chat-footer .chat-submit-btn{
+    width: 40px;
+    text-align: center;
+    padding: 0.4rem 0;
+    cursor: pointer;
+  }
+  .eaza-container .chat-footer .chat-submit-btn img{
+    width: 70%;
+  }
+
+.eaza-container .chat-section{
+    height: 400px;
+    padding: 1rem 2rem;
+    overflow-y: scroll;  
+}
+
+.eaza-container .chat-section .bot-bubble{
+  background: #fff;
+  border-radius: 16px;
+  width: 70%;
+  padding: 1rem;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #ebebeb;
+  word-wrap: break-word;
+}
+.eaza-container .chat-section .bot-bubble p{
+  margin: 0;
+  font-size: 13px;
+}
+.eaza-container .chat-section .chat-time {
+  width: 70%;
+  padding-left: 1rem;
+}
+.eaza-container .chat-section .chat-time p{
+  margin: 0;
+  color: #bbbbbb;
+}
+
+.eaza-container .chat-section .user-bubble{
+  width: 100%;
+  margin: 2rem 0;
+} 
+
+
+.eaza-container .chat-section .user-chat{
+  /* float: right; */
+  background: #0371e3;
+    border-radius: 16px;
+  border-bottom-right-radius: 5px;
+  width: 70%;
+  word-wrap: break-word;
+  margin-left: auto;
+  
+}
+.eaza-container .chat-section .user-chat p{
+  margin: 0;
+  padding: 1rem ;
+  color: #fff;
+  font-size: 13px;
+}
+.eaza-container .chat-section .user-bubble .chat-time{
+  float: right;
+  width: 100%;
+  padding-right: 1rem;
+}
+.eaza-container .chat-section .user-bubble .chat-time p{
+  margin: 0;
+  text-align: right;
+}
+.eaza-container .chat-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+
+.eaza-container .chat-footer .attach-btn i{
+   padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 20px;
+  border: 1px solid #bbbbbb;
+  color: #000;
+  cursor: pointer;
+  transition: ease 1s;
+}
+
+.eaza-container .chat-footer .chat-input{
+  margin: 0;
+  background: #fff !important;
+  margin-top: 0.3rem;
+ 
+}
+.eaza-container .chat-footer .chat-input textarea{
+  padding: 0.5rem 0.8rem;
+  border-radius: 16px;
+  outline:none;
+  border: 1px solid #ebebeb;
+  width:200px;
+  resize: none;
+
+}
+.eaza-container .chat-footer .chat-submit-btn{
+  background: #0371e3;
+  border-radius: 10px;
+}
+
+.eaza-container .attach-files{
+  background: #e5f0fc;
+  position: absolute;
+  display: flex;
+  width: 280px;
+  bottom: 13%;
+  padding: 0.5rem;
+  border-radius:1rem;
+  justify-content: space-between;
+  animation: fade_in_show 0.5s ;
+  margin-left: 1.2rem;
+  
+}
+.eaza-container .attach-files .attach-content{
+  background: #fff;
+  width: 45px;
+  height: 40px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.eaza-container .attach-files .attach-content i{
+  font-size: 18px;
+}
+
+
+
+

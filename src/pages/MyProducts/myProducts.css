@@ -1,0 +1,679 @@
+/*====================
+  All Product Page Style 
+=======================*/
+
+.add-products {
+  width: 100%;
+  height: 6vh;
+  align-items: center;
+}
+.add-products .add-product-form {
+  /* height: 100%; */
+  align-items: center;
+}
+.add-products .add-product-form .input-field {
+  width: 80%;
+}
+.add-products .add-product-form input {
+  height: 100%;
+  width: 300px;
+  border-radius: 2px;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  background: #2c2c2e;
+  color: #ffffff;
+}
+.add-products .add-product-form select {
+  height: 100%;
+  margin-left: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: #3a44a1;
+  color: #ffffff;
+  font-size: 12px;
+}
+.add-products .add-product-form i {
+  background: #5c606a;
+  color: #ffffff;
+  padding: 10.5px 10px 10px;
+  margin-left: 0.2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 10px;
+}
+.add-products .add-product-form .add-filter,
+.add-products .add-product-form .add-filter i {
+  padding: 0;
+  background: none;
+  color: #7062e0;
+  font-weight: 900;
+}
+
+.add-products .add-btn button {
+  background: #7062e0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.my-product-page .add-product-pagination p {
+  color: #ffffff;
+}
+
+.my-product-page .product-stock {
+  width: 100%;
+}
+.my-product-page .product-stock .img {
+  width: 10%;
+}
+.my-product-page .product-stock .img img {
+  width: 60%;
+  margin: 0;
+  border: 2px solid #fff;
+}
+
+.my-product-page .product-stock table th {
+  color: #ffffff;
+  font-weight: 900;
+}
+.my-product-page .product-stock table td {
+  padding: 0.2rem 0;
+}
+.my-product-page .product-stock table td:nth-child(2) {
+  text-align: left;
+}
+
+/*====================
+  Edit Product Page Style 
+=======================*/
+
+.edit-product-page .edit-content {
+  background: #1c1c1e !important;
+  width: 100% !important;
+  padding: 1.5rem;
+}
+
+.edit-product-page .big-form-div {
+  width: 100%;
+
+  display: flex;
+}
+.edit-product-page .big-form-div .left-big-form {
+  width: 50% !important;
+}
+.edit-product-page .big-form-div .left-big-form input,
+.edit-product-page .big-form-div .left-big-form textarea,
+.edit-product-page .big-form-div .right-big-form input,
+.edit-product-page .big-form-div .right-big-form textarea {
+  background: #1c1c1e;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 0.2rem 1rem;
+}
+
+.edit-product-page .big-form-div .left-big-form .left-form {
+  background: #2c2c2e;
+  padding: 1rem;
+  color: #ffffff;
+  padding-bottom: 1.8rem;
+}
+.edit-product-page .big-form-div .left-big-form .left-form label {
+  width: 100%;
+}
+
+.edit-product-page .big-form-div .left-big-form .product-name {
+  width: 100%;
+  height: 6vh;
+}
+
+.edit-product-page .big-form-div .left-big-form .product-desc {
+  width: 100%;
+  height: 30vh;
+}
+.edit-product-page .big-form-div .right-big-form {
+  width: 50% !important;
+}
+
+.edit-product-page .big-form-div .right-big-form .left-form {
+  background: #2c2c2e;
+  padding: 1rem;
+  color: #ffffff;
+  padding-top: 3.5rem;
+}
+
+.edit-product-page .big-form-div .right-big-form .left-form .select-publish {
+  background: #1c1c1e;
+  color: #3a955e;
+  width: 30%;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.edit-product-page .right-big-form .left-form {
+  height: 80%;
+}
+
+.edit-product-page .right-big-form .left-form .browse-img {
+  background-color: #1c1c1e;
+  padding: 3rem 3rem;
+}
+.edit-product-page .small-form-div {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  height: 25vh;
+  justify-content: space-between;
+}
+
+.edit-product-page .small-form-div .product-category {
+  width: 45.5%;
+  margin-right: 3rem;
+  margin-bottom: -3rem;
+}
+
+.edit-product-page .small-form-div .add-on {
+  width: 50%;
+  background: #2c2c2e;
+}
+/* .edit-product-page .small-form-div .product-category .select-category {
+  background: #0a0a0a;
+  height: 30%;
+} */
+.edit-product-page .small-form-div .product-category .select-category h5 {
+  font-size: 1.1rem;
+}
+.edit-product-page .small-form-div .product-category .select-category select {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  background: #0a0a0a;
+  outline: none;
+  border: none;
+  color: #9fc3d4;
+  font-size: 1.1rem;
+}
+.edit-product-page .category-checkbox {
+  padding: 1rem !important;
+}
+
+.edit-product-page .category-checkbox input[type="checkbox"],
+.add-on input[type="checkbox"] {
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #444348;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #999999;
+}
+.edit-product-page .category-checkbox input[type="checkbox"]::after,
+.add-on input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 0.5rem;
+  color: #fff;
+  display: none;
+}
+
+.edit-product-page .category-checkbox input[type="checkbox"]:checked,
+.add-on input[type="checkbox"]:checked {
+  background: #444348;
+}
+
+.edit-product-page .category-checkbox input[type="checkbox"]:checked::after,
+.add-on input[type="checkbox"]:checked::after {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-product-page .category-checkbox label {
+  color: #ffffff;
+  margin: 0.2rem 1rem;
+}
+
+.edit-product-page .save-btn button {
+  padding: 0.5rem 4rem;
+  outline: none;
+  border: none;
+  background: #3a44a1;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+/*========================
+  View Product Page Style 
+=========================*/
+
+.view-product-page {
+  margin-bottom: 3rem;
+}
+.view-product-page .view-product {
+  height: 70vh !important;
+  display: flex;
+}
+
+.view-product-page .view-product .product-img {
+  height: 100%;
+  width: 40%;
+
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-product-page .view-product .product-details {
+  width: 50%;
+  margin: auto 0;
+}
+
+/* .transaction-page {
+  padding: 0 !important;
+} */
+nav {
+  background: black;
+  width: 100%;
+}
+
+.view-product .product-img img {
+  width: 70%;
+}
+
+.view-product hr {
+  margin: 0.5rem 0;
+}
+
+.view-product .view-btn button {
+  padding: 0.3rem 1.5rem;
+  outline: none;
+  border: none;
+  background: #3a44a1;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/*========================
+  Bulk Product Page Style 
+==========================*/
+
+.bulk-product-choose-upload-btn {
+  width: 100% !important;
+}
+.bulk-product .csv-file-btn .upload-btn {
+  width: 70%;
+  margin: 0 auto;
+}
+.bulk-product .csv-file-btn .upload-btn .btn {
+  position: absolute;
+  bottom: 55%;
+  left: 55%;
+}
+.bulk-product .csv-file-btn .upload-btn label {
+  text-align: center !important;
+}
+
+.dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropzone p {
+  font-size: 16px;
+}
+.bulk-product .csv-file-btn .choose-btn label,
+.bulk-product .csv-file-btn .upload-btn label {
+  background: #3a44a1;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+}
+.bulk-product .csv-file-btn .upload-btn label {
+  background: #7062e0;
+}
+
+.bulk-product .preview-btn button {
+  background: #2c2c2e;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  color: #5c606a;
+}
+
+.bulk-product .bulk-header .create-header-btn button {
+  background: #3a44a1;
+  outline: none;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.3rem 1.7rem;
+  color: #ffffff;
+  margin-right: 0.2rem;
+}
+.bulk-product .bulk-header .add-more-btn button {
+  background: #5c606a;
+  outline: none;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0.3rem 1rem;
+  color: #7062e0;
+}
+
+.bulk-product .bulk-header table,
+.bulk-product .bulk-header thead,
+.bulk-product .bulk-header tbody,
+.bulk-product .bulk-header td,
+.bulk-product .bulk-header th {
+  border: 0.3px solid #ffffff;
+  padding: 0.5rem;
+
+  color: #c0c0c0;
+}
+
+.bulk-product .bulk-header table {
+  width: 97%;
+
+  text-align: center;
+}
+
+.bulk-product .bulk-header table > thead {
+  background: #000000;
+}
+
+.bulk-product .bulk-header .edit-header-btn button {
+  background: transparent;
+  outline: none;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  color: #dd5c64;
+  padding: 0.2rem 0.3rem;
+}
+
+.bulk-product .bulk-header .cross-icon {
+  float: right;
+  margin-top: -7.5rem;
+  margin-right: 1.2rem;
+}
+
+.bulk-product-save-btn button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background: #3a44a1;
+  color: #fff;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.bulk-product .bulk-header .cross-icon:hover {
+  cursor: pointer;
+}
+
+.bulk-product .bulk-header .header-table-div {
+  width: 70%;
+}
+.bulk-product .bulk-header .header-table-div td input {
+  margin: 0;
+  padding: 0.2rem 0.5rem;
+  outline: none;
+  border: none;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 1rem;
+  width: 90%;
+}
+
+/*========================================
+                      Resonsive Style Only for Mobile Devices
+                    ========================================*/
+
+/*===================================
+  Making All Product Page Responsive 
+====================================*/
+
+@media screen and (max-width: 720px) {
+  .my-product-page .add-products {
+    display: block !important;
+  }
+  .my-product-page .add-products .add-product-form {
+    display: block !important;
+    width: 100% !important;
+
+    padding: 0 !important;
+  }
+  .my-product-page .add-products .add-product-form div {
+    margin: 0 auto;
+    width: 70vw !important;
+    padding: 0;
+  }
+
+  .add-products .add-product-form .input-field {
+    width: 100% !important;
+  }
+  .add-products .add-product-form .input-field input {
+    /* width: 80.6vw !important; */
+    width: 100% !important;
+  }
+
+  .my-product-page .add-products .add-product-form .select-div {
+    margin: 0 auto;
+
+    padding: 0.5rem 0;
+  }
+  .my-product-page .add-products .add-product-form .select-div select {
+    margin-left: 0 !important;
+  }
+  .my-product-page .add-products .add-product-form .add-filter {
+    width: 90% !important;
+    /* float: right; */
+    /* margin-top: -14%; */
+
+    /* margin-left: 0 !important; */
+    margin: 0 auto !important;
+    padding: 0.5rem 0;
+  }
+
+  .my-product-page .add-products .add-btn button {
+    float: right;
+    margin-left: 0.9rem;
+  }
+  .my-product-page .add-product-pagination {
+    margin-top: 7rem !important;
+  }
+  .my-product-page .product-stock {
+    overflow-x: scroll;
+  }
+
+  /*===================================
+  Making Bulk Product Page Responsive 
+====================================*/
+
+  .bulk-product-choose-upload-btn {
+    width: auto;
+  }
+  .bulk-header .header-table {
+    display: block !important;
+  }
+  .bulk-header .header-table .edit-header-btn {
+    margin: 2rem 0;
+  }
+  .bulk-header .header-table .header-table-div {
+    overflow-x: scroll;
+
+    width: 100% !important;
+  }
+  .bulk-product .csv-file-btn .upload-btn .btn {
+    left: 35%;
+  }
+
+  /*===================================
+      Making Edit Product Page Responsive 
+    ====================================*/
+
+  .edit-product-page .big-form-div .left-big-form .left-form div {
+    display: block !important;
+  }
+  .edit-product-page .big-form-div .left-big-form .left-form div label {
+    width: auto !important;
+  }
+  /* .browse-img {
+    padding: 2rem 0.5rem !important;
+  } */
+  .edit-product-page .small-form-div {
+    display: block !important;
+  }
+  .edit-product-page .small-form-div .product-category,
+  .edit-product-page .small-form-div .add-on {
+    width: 100% !important;
+    margin: 1rem 0;
+  }
+
+  .edit-product-page .small-form-div .last-form {
+    margin-top: 9rem;
+  }
+  .edit-product-page .save-btn {
+    width: 100% !important;
+  }
+  .edit-product-page .big-form-div .left-big-form input {
+    height: 40px;
+  }
+
+  /*===================================
+      Making Edit Product Page Responsive 
+    ====================================*/
+
+  .view-product-page .view-product {
+    display: block !important;
+    height: auto !important;
+  }
+  .view-product-page .view-product div {
+    width: 100% !important;
+  }
+}
+
+/*========================================
+                      Resonsive Style Only for Tablet Devices
+                    ========================================*/
+
+/*===================================
+  Making All Product Page Responsive 
+====================================*/
+
+@media screen and (min-width: 721px) {
+  .my-product-page .add-products .add-product-form .add-filter {
+    width: 25% !important;
+  }
+
+  .open-folder-btn {
+    padding-right: 1rem;
+    align-items: center;
+    border-radius: 5px !important;
+  }
+
+  /*===================================
+  Making Bulk Product Page Responsive 
+====================================*/
+  .bulk-product-choose-upload-btn {
+    width: 50%;
+  }
+
+  /*===================================
+      Making Edit Product Page Responsive 
+    ====================================*/
+
+  /* .edit-product-page .big-form-div .right-big-form .left-form div label {
+    display: block;
+  } */
+
+  .open-folder-btn div {
+    margin: 0 0.3rem;
+    width: 100%;
+  }
+
+  .open-folder-btn div label {
+    display: block;
+  }
+}
+
+/*====================================================
+                      Resonsive Style Only for Both Tab and Mobile Devices
+                    ======================================================*/
+
+/*===================================
+  Making All Product Page Responsive 
+====================================*/
+
+@media screen and (max-width: 1000px) {
+  .transaction-links .transaction-text-links ul li {
+    margin: 0 !important;
+  }
+
+  /*===================================
+  Making Edit Product Page Responsive 
+====================================*/
+
+  .edit-product-page .big-form-div {
+    display: block !important;
+  }
+  .edit-product-page .big-form-div .left-big-form,
+  .edit-product-page .big-form-div .right-big-form {
+    width: 100% !important;
+  }
+  .edit-product-page .big-form-div .right-big-form {
+    margin: 1rem 0;
+  }
+  .bulk-product .csv-file-btn .upload-btn .btn {
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bulk-product .csv-file-btn .upload-btn .btn {
+    left: 35%;
+  }
+  .bulk-product .header-btn div {
+    width: 160px !important;
+  }
+  .bulk-product .edit-header-btn {
+    position: absolute;
+    margin: 3rem 0 !important;
+    /* right: 0; */
+  }
+  .bulk-product .bulk-header .header-table-div .header-table {
+    margin: 3rem 0 !important;
+    border: none;
+  }
+  .bulk-product .bulk-header .header-table-div .cross-icon {
+    margin-top: -10rem;
+    margin-right: 0;
+  }
+  .edit-product-page .open-folder-btn {
+    display: block !important;
+  }
+  .edit-product-page .open-folder-btn div {
+    width: 100% !important;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .edit-product-page .right-big-form .left-form .browse-img {
+    padding: 4rem !important;
+  }
+}

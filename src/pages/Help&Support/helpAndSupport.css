@@ -1,0 +1,299 @@
+/*======================== 
+    Need Help Page Style
+  =========================   */
+
+/*======================== 
+    All Ticket Page Style
+  =========================   */
+
+/* Search Ticket Section Style */
+
+.need-help-page .search-tickets {
+  /* padding: 0 3rem; */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.need-help-page .search-tickets .search-ticket-content {
+  width: 80%;
+
+  align-items: center;
+  padding: 0;
+}
+.need-help-page .search-tickets .search-ticket-content select {
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  background: #2c2c2c;
+  border-radius: 5px;
+  color: #fff;
+}
+.need-help-page .search-tickets .search-ticket-input {
+  width: 30%;
+}
+
+.need-help-page .search-tickets .search-ticket-input input {
+  background: #2c2c2e;
+  outline: none;
+  border: none;
+  padding: 0.4rem 1rem;
+  width: 100%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.need-help-page .search-tickets .search-ticket-content button {
+  outline: none;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  background: #2c2c2c;
+  color: #fff;
+  /* border: 0.5px solid darkgray; */
+}
+/* .need-help-page
+  .search-tickets
+  .search-ticket-content
+  .download-options
+  button:not(:last-child) {
+  border-right: none;
+} */
+.need-help-page .search-tickets .search-ticket-content button:hover {
+  background: #1c1c1c;
+  color: #fff;
+}
+.need-help-page .search-tickets .search-ticket-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.need-help-page .search-tickets .search-ticket-btn button {
+  background: #3a44a1;
+  padding: 0.4rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 900;
+}
+.need-help-page .search-tickets .search-ticket-btn button:hover {
+  background: #3a44a1;
+}
+.need-help-page .search-tickets .search-ticket-btn i {
+  background: #5c606a;
+  padding: 13px 0.4rem;
+  color: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 0.2rem;
+  font-size: 0.5rem;
+}
+.need-help-page .search-tickets .ticket-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.need-help-page .search-tickets .ticket-filter i {
+  color: #7062e0;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+/* Ticket List Table Section */
+
+.need-help-page .ticket-list-table {
+  margin: 2rem 0;
+}
+.need-help-page .ticket-list-table table {
+  color: #ffffff;
+}
+.need-help-page .ticket-list-table thead {
+  background: #111113;
+}
+/* 
+#layout-wrapper
+  > div.main-content
+  > div
+  > div.ticket-list-table
+  > table
+  > tbody
+  > tr:nth-child(even) {
+  background: #424242;
+} */
+
+.need-help-page .ticket-list-table td p {
+  margin: 0;
+  /* background: #000; */
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+/* Create Ticket Modal Style */
+
+.create-ticket-form {
+  margin: 0 auto;
+  padding: 0 6rem;
+}
+.create-ticket-form div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.create-ticket-form div input,
+.create-ticket-form div select,
+.create-ticket-form div textarea {
+  width: 80%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #5c606a;
+  color: #ffffff;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin-top: -0.5rem;
+  resize: none;
+}
+.create-ticket-form div input::placeholder,
+.create-ticket-form div select {
+  color: #5c606a;
+}
+
+.create-ticket-form .create-ticket-form-btn {
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+.create-ticket-form div label {
+  color: #ffffff;
+}
+.create-ticket-form .create-ticket-form-btn button {
+  padding: 0.5rem 3rem;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: #3a44a1;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.create-ticket-form .create-ticket-form-btn {
+  align-items: center;
+  padding: 0%;
+}
+.create-ticket-form .create-ticket-form-btn label {
+  background: #3a44a1;
+  width: 25%;
+  color: #ffffff;
+  margin-top: 0.6rem;
+}
+
+/* Tiny Mce Style */
+.tox:not([dir="rtl"]) .tox-toolbar__group:not(:last-of-type) {
+  border-right: 1px solid #2c2c2c !important;
+  background: #2c2c2c !important;
+}
+.tox .tox-tbtn {
+  background: #2c2c2c !important;
+}
+
+.tox .tox-menu {
+  background: #000 !important;
+}
+.tox
+  .tox-collection--list
+  .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+  background: #000;
+}
+.tox .tox-collection--list .tox-collection__item--enabled {
+  background-color: #000 !important;
+}
+.tox-tinymce {
+  border: 2px solid #2c2c2c !important;
+}
+
+/*======================== 
+    FAQ Page Style
+  =========================   */
+
+.faq-page .faq-page-content {
+  padding: 0 3rem;
+  padding-top: 3rem;
+}
+
+/* .faq-page .faq-page-content .bnpl-div option:first-child {
+  font-size: 2rem;
+} */
+
+.faq-page .faq-page-content .bnpl-div {
+  margin: 1rem 0;
+}
+.faq-page .faq-page-content .bnpl-div .faq-questions {
+  width: 100%;
+  background: #111113;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-page .faq-page-content .bnpl-div .faq-questions h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.faq-page .faq-page-content .bnpl-div .faq-answers p {
+  color: #5c606a;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+  .faq-page-content {
+    padding: 0 !important;
+    padding-top: 2rem !important;
+  }
+  .need-help-page .ticket-list-table {
+    overflow-x: scroll;
+  }
+  .search-ticket-input,
+  .search-ticket-btn {
+    position: absolute;
+    top: 30%;
+    margin: 1rem 0;
+  }
+  .search-ticket-input {
+    left: 6.5%;
+  }
+  .search-ticket-input input {
+    width: 170% !important;
+  }
+  .search-ticket-btn {
+    right: 6.5%;
+  }
+  .ticket-list-table {
+    margin-top: 5rem !important;
+  }
+  .create-ticket-form {
+    padding: 0;
+  }
+  .create-ticket-form .create-ticket-form-btn button {
+    padding: 0.5rem 2rem;
+  }
+  .create-ticket-form .create-ticket-form-btn label {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .need-help-page .search-tickets .search-ticket-content {
+    overflow-x: scroll;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .need-help-page .search-tickets .search-ticket-content select {
+    margin: 0.5rem;
+  }
+  .need-help-page .create-ticket-modal {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+  }
+}
