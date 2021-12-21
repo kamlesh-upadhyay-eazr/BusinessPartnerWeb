@@ -95,7 +95,6 @@ export const loginotp = (phone) => {
     axios
       .post(
         `${ip}/business/user/loginotp`,
-
         phone
       )
       .then((res) => {
@@ -182,11 +181,11 @@ export const resendOtp = (phone) => {
         phone,
       })
       .then((res) => {
+        console.log("response",res);
         debugger;
         dispatch({
           type: OTP_SENT,
         });
-        console.log("response",res);
 
         // ToastAndroid.show(
         //   "Otp has been resent to your device",
@@ -201,7 +200,7 @@ export const resendOtp = (phone) => {
           payload:
             resendOtp != undefined && resendOtp.length != 0
               ? err.response.data
-              : phone,
+              : null,
         });
       });
   };

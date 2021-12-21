@@ -18,13 +18,16 @@ const ModalExample = (props) => {
   // console.log(otp);
 
   const VerifyOtp = (e) => {
+    debugger;
     // const otpNumber = otp.pin1 + otp.pin2 + otp.pin3 + otp.pin4;
     const otpNumber = otp;
     props.verifyOtp(props.phone.phone, otpNumber, props.history);
   };
 
   const ResendOtp = (e) => {
-    return dispatch(resendOtp(props.phone));
+    debugger;
+    console.log('ResendOtp', props.phone.phone)
+    return dispatch(resendOtp(props.phone.phone));
   };
   // const count = useSelector((state) => state.counter.count);
   const showModal = useSelector((state) => state.Auth.successful);
