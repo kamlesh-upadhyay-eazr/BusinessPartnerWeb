@@ -52,9 +52,7 @@ export const fetchingBankDetails = (start, end, searched) => {
         params: { start, end, searched: "", page: 1, limit: 10000 },
       })
       .then((res) => {
-        debugger;
         console.log("res", res.data);
-
         dispatch({
           type: FETCH_BANK_DETAILS,
           payload: res.data,
@@ -62,7 +60,6 @@ export const fetchingBankDetails = (start, end, searched) => {
       })
 
       .catch((err) => {
-        debugger;
         console.log("err", err);
         dispatch({
           type: FETCH_SETTLEMENT_TRANSACTIONS_FAILED,
@@ -72,7 +69,6 @@ export const fetchingBankDetails = (start, end, searched) => {
   };
 };
 
-
 //ADD bank details
 export const addBankDetail = (
   bankName,
@@ -80,7 +76,6 @@ export const addBankDetail = (
   accountNumber,
   ifscCode
 ) => {
-
   console.log("name", bankName);
   return (dispatch) => {
     axios

@@ -8,6 +8,7 @@ import {
   ORDER_TRANSACTIONS_CHANGE_STATUS,
   CHANGE_ORDER_TRANSACTSTATUS_FAILED,
   TOTAL_SUM,
+  TOTAL_TRANSACTIONS_SUM,
   FETCH_COMPLETED_TRANSACTIONS,
   FETCH_COMPLETED_TRANSACTIONS_FAILED,
   FETCH_FAILED_TRANSACTIONS,
@@ -38,6 +39,7 @@ export const fetchOrderTransactions = (start, end, searched) => {
         var data = {
           transactions: res.data.transactions,
           totalSum: sum,
+          totalTransactionsSum: sum,
         };
 
         dispatch({

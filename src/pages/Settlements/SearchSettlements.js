@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchingBankDetails } from "../../store/redux/settlements/actionsettlements";
 
-const SearchSettlements = () => {
+const SearchSettlements = ({getSearchSettlementValues, filterArray }) => {
   const dispatch = useDispatch();
-  const [filter, setFilter] = useState(false);
-  const [searchTerm, setsearchTerm] = useState();
+  // const [filter, setFilter] = useState(false);
+  const [filter, setFilter] = useState(null);
+  const [searchTerm, setsearchTerm] = useState(null);
+  const [search, setSearch] = useState(null);
   const showFilter = () => {
     setFilter(!filter);
     // console.log(filter);
@@ -14,9 +16,16 @@ const SearchSettlements = () => {
   useEffect(() => {
     dispatch(fetchingBankDetails());
   }, []);
-  const filteredstate = useSelector((state) => state.Settlement.bankDetails);
-  console.log("states", filteredstate);
+  const { settlements } = useSelector((state) => state.Settlement);
+  //const filteredstate = useSelector((state) => state.Settlement.bankDetails);
+  console.log("settlements", settlements);
 
+  
+  const onChange = (e) => {
+    getSearchSettlementValues(e.target.value);
+    setSearch(e.target.value);
+    filterArray();
+  };
   return (
     <>
       {/* <div style={{display: 'flex', flexDirection:'row'}}> */}
@@ -32,8 +41,10 @@ const SearchSettlements = () => {
               <input
                 style={{ height: "2rem" }}
                 type="text"
+                value={search}
                 placeholder="search..."
-                onChange={(event) => setsearchTerm(event.target.value)}
+                // onChange={(event) => setsearchTerm(event.target.value)}
+                onChange={(e) => onChange(e)}
               />
             </div>
             <div className="d-flex tran-form-btn">

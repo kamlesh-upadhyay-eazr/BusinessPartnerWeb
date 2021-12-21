@@ -38,9 +38,11 @@ class CompleteSettlements extends Component {
     } else if (this.props.settlements && this.props.settlements.length > 0) {
       let filtered = this.props.settlements.filter(
         (e) => (e.status ? e.status === "Successfull" : "no data")
+        // .filter(a => new Date(a.startDate) - new Date > 0);
         // e.status.orderStatus === "Preparing"
       );
-      data = filtered.map((t) => {
+      data = filtered
+      .map((t) => {
         console.log("t", t);
         return (
           <SingleSettlement

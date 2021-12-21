@@ -93,10 +93,7 @@ export const loginotp = (phone) => {
     dispatch(setAuthLoading());
 
     axios
-      .post(
-        `${ip}/business/user/loginotp`,
-        phone
-      )
+      .post(`${ip}/business/user/loginotp`, phone)
       .then((res) => {
         console.log("res", res);
         dispatch({
@@ -127,7 +124,6 @@ export const loginotp = (phone) => {
 
 //Verify otp
 export const verifyOtp = (phone, otp, history) => {
-  debugger;
   return (dispatch) => {
     axios
       .post(`${ip}/business/user/verifyotp`, {
@@ -135,7 +131,6 @@ export const verifyOtp = (phone, otp, history) => {
         otp,
       })
       .then((res) => {
-        debugger;
         const { token } = res.data;
 
         localStorage.setItem("token", token);
@@ -159,7 +154,6 @@ export const verifyOtp = (phone, otp, history) => {
         history.push("/dashboard");
       })
       .catch((err) => {
-        debugger;
         console.log(err);
 
         dispatch({
@@ -172,7 +166,6 @@ export const verifyOtp = (phone, otp, history) => {
 
 //Resend otp
 export const resendOtp = (phone) => {
-  debugger;
   return (dispatch) => {
     dispatch(setAuthLoading());
 
@@ -181,8 +174,8 @@ export const resendOtp = (phone) => {
         phone,
       })
       .then((res) => {
-        console.log("response",res);
-        debugger;
+        console.log("response", res);
+
         dispatch({
           type: OTP_SENT,
         });
@@ -193,7 +186,6 @@ export const resendOtp = (phone) => {
         // );
       })
       .catch((err) => {
-        debugger;
         console.log(err);
         dispatch({
           type: AUTH_ERRORS,
@@ -239,7 +231,6 @@ export const setCurrentUser = (decoded, token) => {
 };
 
 export const setAuthToken = (token) => {
-  debugger;
   if (token) {
     //Apply to every request
     axios.defaults.headers.common["Authorization"] = token;

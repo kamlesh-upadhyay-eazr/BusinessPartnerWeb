@@ -18,15 +18,13 @@ const ModalExample = (props) => {
   // console.log(otp);
 
   const VerifyOtp = (e) => {
-    debugger;
     // const otpNumber = otp.pin1 + otp.pin2 + otp.pin3 + otp.pin4;
     const otpNumber = otp;
     props.verifyOtp(props.phone.phone, otpNumber, props.history);
   };
 
   const ResendOtp = (e) => {
-    debugger;
-    console.log('ResendOtp', props.phone.phone)
+    // console.log('ResendOtp', props.phone.phone)
     return dispatch(resendOtp(props.phone.phone));
   };
   // const count = useSelector((state) => state.counter.count);
@@ -146,7 +144,8 @@ const ModalExample = (props) => {
             </button>
             {/* </Link> */}
             <br />
-            <Link to=""
+            <Link
+              to=""
               style={{ color: "#7062e0", borderBottom: "1px solid #7062e0 " }}
               onClick={(e) => ResendOtp(e)}
             >

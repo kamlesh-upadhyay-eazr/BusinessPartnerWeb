@@ -85,7 +85,7 @@ class Transaction extends Component {
           totalAmount={this.props.transaction.totalSum}
           totalTransaction="Total Transactions"
           noOfTransaction={totaltransactions}
-          noOfTransaction="0"
+          noOfTransaction="5"
         />
         <Row className="latest-transaction-row">
           <Col>

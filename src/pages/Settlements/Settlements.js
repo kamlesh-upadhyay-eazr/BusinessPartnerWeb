@@ -25,30 +25,27 @@ class Settlements extends Component {
       data: [],
       pageNumber: 0,
       currentPage: 0,
+      searchSettlements: null,
+      filterSettlements: null,
     };
     // this.handlePageClick = this
     //         .handlePageClick
     //         .bind(this);
   }
   componentDidMount() {
-   
-    
     this.props.fetchSettlements();
     // console.log(this.props.settlements);
   }
 
   render() {
-    
-    const usersPerPage=10;
+    const usersPerPage = 10;
     const pageVisited = this.state.pageNumber * usersPerPage;
 
-    const pageCount = Math.ceil(this.props.settlements ?.length / usersPerPage);
+    const pageCount = Math.ceil(this.props.settlements?.length / usersPerPage);
 
-    const changePage = ({
-      selected
-    }) => {
-      this.setState({pageNumber: selected});
-    }
+    const changePage = ({ selected }) => {
+      this.setState({ pageNumber: selected });
+    };
     // for total amount
 
     const sum =
@@ -62,9 +59,25 @@ class Settlements extends Component {
     const totaltransactions = this.props.settlements
       ? this.props.settlements.length
       : 0;
-        
 
-    console.log("settlment", this.props.settlements);
+    const filterArray = () => {
+      if (
+        this.state.searchSettlements !== null &&
+        this.state.searchSettlements.length > 0
+      ) {
+        const filter = this.props.settlements.filter((trans) => {
+          return trans._id.includes(this.state.searchSettlements);
+        });
+        this.setState(filter);
+      }
+    };
+    console.log("settlement", this.props.settlements);
+
+    const getSearchSettlementValues = (value) => {
+      this.setState({ searchSettlements: value });
+      debugger;
+    };
+
     return (
       <div className="page-content settlement-page transaction-page">
         <Row>
@@ -72,7 +85,10 @@ class Settlements extends Component {
             <SettlementNav />
           </Col>
         </Row>
-        <SearchSettlements />
+        <SearchSettlements
+          getSearchSettlementValues={getSearchSettlementValues}
+          filterArray={filterArray}
+        />
 
         <AmountAndTransaction
           amountType="Settlement Amount"
@@ -83,7 +99,6 @@ class Settlements extends Component {
 
         <Row>
           <Col className="settlement-table">
-            
             <Loader
               style={{
                 flex: 1,
@@ -109,8 +124,22 @@ class Settlements extends Component {
                 </tr>
               </thead>
               <tbody>
-                {/* {console.log("?", this.props.settlements)} */}
-                {this.props.settlements != null ? (
+                {this.state.filterSettlements ? (
+                  this.state.filterSettlements.map((item) => {
+                    return (
+                      <SingleSettlement
+                        data={item}
+                        settlementId={item._id}
+                        amount={item.amount}
+                        fees="₹19.02"
+                        tax="₹0.02"
+                        date={item.createdAt}
+                        time={item.createdAt}
+                        status={item.status.status}
+                      />
+                    );
+                  })
+                ) : this.props.settlements != null ? (
                   this.props.settlements
                     .slice(pageVisited, pageVisited + usersPerPage)
                     .map((item) => {
@@ -137,7 +166,8 @@ class Settlements extends Component {
                   >
                     No data found
                   </h6>
-                )}
+                )
+                }
               </tbody>
             </Table>
             <ReactPaginate
