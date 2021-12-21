@@ -18,89 +18,98 @@ const SingleSettlement = (props) => {
         <Link
           // to="/settlement/:${}"
           to={{
-            pathname: `/settlement/${props.settlementId} `,
+            // pathname: `/settlement/${props.settlementId} `,
             state: props.data,
           }}
-          style={{ textDecoration: "none", color: "#ffffff" }}
+          style={{ textDecoration: "none", cursor: "auto", color: "#ffffff" }}
         >
-          {props.settlementId}
         </Link>
+          {props.settlementId}
       </td>
       <td>
         <Link
           to={{
-            pathname: `/settlement/${props.settlementId} `,
+            // pathname: `/settlement/${props.settlementId} `,
             state: props.data,
           }}
-          style={{ textDecoration: "none", color: "#ffffff" }}
+          style={{ textDecoration: "none", cursor: "auto", color: "#ffffff" }}
         >
-          {props.amount}
         </Link>
+          {props.amount}
       </td>
 
       <td>
         <Link
           to={{
-            pathname: `/settlement/${props.settlementId} `,
+            // pathname: `/settlement/${props.settlementId} `,
             state: props.data,
           }}
           style={{
             textDecoration: "none",
             color: "#ffffff",
+            cursor: "auto",
           }}
         >
+        </Link>
           {props.fees}
-        </Link>
       </td>
       <td>
         {" "}
         <Link
           to={{
-            pathname: `/settlement/${props.settlementId} `,
+            // pathname: `/settlement/${props.settlementId} `,
             state: props.data,
           }}
           style={{
             textDecoration: "none",
             color: "#ffffff",
+            cursor: "auto",
           }}
         >
+        </Link>
           {props.tax}
-        </Link>
       </td>
       <td>
         {" "}
         <Link
           to={{
-            pathname: `/settlement/${props.settlementId} `,
+            // pathname: `/settlement/${props.settlementId} `,
             state: props.data,
           }}
           style={{
             textDecoration: "none",
             color: "#ffffff",
+            cursor: "auto",
           }}
-        >
+          >
+        </Link>
+        
           {moment(props.date).format("DD:MM:YYYY")} At{" "}
           {moment(props.time).format("hh:mm")}
-        </Link>
       </td>
       <td>
         <Link
           to={{
-            pathname: `/settlement/${props.settlementId} `,
+            // pathname: `/settlement/${props.settlementId} `,
             state: props.data,
           }}
           style={{
             textDecoration: "none",
             color: "#ffffff",
+            cursor: "auto",
           }}
         >
           <div
             className="badge badge-soft-success font-size-12"
-            style={{ color: "#ffffff", background: statusColor() }}
+            style={{
+              color: "#ffffff",
+              cursor: "auto",
+              background: statusColor(),
+            }}
           >
-            {props.status}
           </div>
         </Link>
+            {props.status}
       </td>
     </tr>
   );

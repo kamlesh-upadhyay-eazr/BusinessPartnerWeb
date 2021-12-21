@@ -15,41 +15,43 @@ const SearchSettlements = () => {
     dispatch(fetchingBankDetails());
   }, []);
   const filteredstate = useSelector((state) => state.Settlement.bankDetails);
-  console.log("state", filteredstate);
+  console.log("states", filteredstate);
 
   return (
     <>
       {/* <div style={{display: 'flex', flexDirection:'row'}}> */}
-        <div
-          className="all-transaction-form"
-          style={{ display: !filter ? "none" : "block" }}
-        >
-          <div className="all-settlements-form d-flex justify-content-between">
-            <div className="third d-flex">
-              <div>
-                <label>Settlement ID</label>
-                <br />
-                <input
-                  type="text"
-                  placeholder="search..."
-                  onChange={(event) => setsearchTerm(event.target.value)}
-                />
-              </div>
-              <div className="d-flex tran-form-btn">
-                <div className="search-btn">
-                  <button>Search</button>
-                </div>
+      <div
+        className="all-transaction-form"
+        style={{ display: !filter ? "none" : "block" }}
+      >
+        <div className="all-settlements-form d-flex justify-content-between">
+          <div className="third d-flex">
+            <div>
+              <label>Settlement ID</label>
+              <br />
+              <input
+                style={{ height: "2rem" }}
+                type="text"
+                placeholder="search..."
+                onChange={(event) => setsearchTerm(event.target.value)}
+              />
+            </div>
+            <div className="d-flex tran-form-btn">
+              <div className="search-btn">
+                <button>Search</button>
+                {/* onClick={() => console.log("searcher")} */}
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <i
-            style={{ top: !filter && "8.6%" }}
-            className="fas fa-filter"
-            onClick={showFilter}
-          ></i>
-        </div>
+      </div>
+      <div>
+        <i
+          style={{ top: !filter && "8.6%" }}
+          className="fas fa-filter"
+          onClick={showFilter}
+        ></i>
+      </div>
       {/* </div> */}
     </>
   );

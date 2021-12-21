@@ -128,6 +128,7 @@ export const loginotp = (phone) => {
 
 //Verify otp
 export const verifyOtp = (phone, otp, history) => {
+  debugger;
   return (dispatch) => {
     axios
       .post(`${ip}/business/user/verifyotp`, {
@@ -135,6 +136,7 @@ export const verifyOtp = (phone, otp, history) => {
         otp,
       })
       .then((res) => {
+        debugger;
         const { token } = res.data;
 
         localStorage.setItem("token", token);
@@ -158,6 +160,7 @@ export const verifyOtp = (phone, otp, history) => {
         history.push("/dashboard");
       })
       .catch((err) => {
+        debugger;
         console.log(err);
 
         dispatch({
@@ -170,6 +173,7 @@ export const verifyOtp = (phone, otp, history) => {
 
 //Resend otp
 export const resendOtp = (phone) => {
+  debugger;
   return (dispatch) => {
     dispatch(setAuthLoading());
 
@@ -178,9 +182,11 @@ export const resendOtp = (phone) => {
         phone,
       })
       .then((res) => {
+        debugger;
         dispatch({
           type: OTP_SENT,
         });
+        console.log("response",res);
 
         // ToastAndroid.show(
         //   "Otp has been resent to your device",
@@ -188,13 +194,14 @@ export const resendOtp = (phone) => {
         // );
       })
       .catch((err) => {
+        debugger;
         console.log(err);
         dispatch({
           type: AUTH_ERRORS,
           payload:
             resendOtp != undefined && resendOtp.length != 0
               ? err.response.data
-              : null,
+              : phone,
         });
       });
   };
@@ -233,6 +240,7 @@ export const setCurrentUser = (decoded, token) => {
 };
 
 export const setAuthToken = (token) => {
+  debugger;
   if (token) {
     //Apply to every request
     axios.defaults.headers.common["Authorization"] = token;

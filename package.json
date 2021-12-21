@@ -75,6 +75,7 @@
     "react-input-mask": "^2.0.4",
     "react-jvectormap": "^0.0.16",
     "react-leaflet": "^2.7.0",
+    "react-loader-spinner": "^4.0.0",
     "react-modal-video": "^1.2.3",
     "react-notifications": "^1.7.2",
     "react-otp-input": "^2.4.0",

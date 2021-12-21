@@ -12,7 +12,7 @@ import { addBankDetail } from "../../store/redux/settlements/actionsettlements";
 import { NewAccountValidation } from "../../Validations/ValidateNewAccount";
 
 class AddNewAccount extends Component {
-  // debugger;
+  //
   constructor(props) {
     super(props);
 
@@ -69,10 +69,10 @@ class AddNewAccount extends Component {
       );
     }
   };
-  // debugger;
+  //
 
   render() {
-    // debugger;
+    //
     console.log("name", this.state);
     return (
       <div className="page-content transaction-page add-account">
@@ -215,7 +215,7 @@ class AddNewAccount extends Component {
 }
 
 const mapStatetoProps = (state) => {
-  // debugger;
+  //
   // console.log("stats", state.Settlement);
   const { bankDetails } = state.Settlement;
   // console.log("order", orderTransactions);

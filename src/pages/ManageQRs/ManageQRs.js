@@ -43,7 +43,6 @@ class ManageQRs extends Component {
   //   })
 
   render() {
-    debugger;
     // let data = this.props.profile.upi;
 
     // if (data != null && data.length > 0) {
@@ -96,10 +95,7 @@ class ManageQRs extends Component {
               </div>
             </div>
             <div className="share-qr-btn">
-              <button style={{ backgroundColor: "#7062e0" }}
-              >
-                Share QR
-                </button>
+              <button style={{ backgroundColor: "#7062e0" }}>Share QR</button>
             </div>
           </div>
           <div className="right-qr-info">
@@ -124,7 +120,11 @@ class ManageQRs extends Component {
               </div> */}
               <div className="download-qr-btn">
                 <button
-                  style={{ backgroundColor: "#7062e0", heighht:"2px", width:"10rem" }}
+                  style={{
+                    backgroundColor: "#7062e0",
+                    heighht: "2px",
+                    width: "10rem",
+                  }}
                   onClick={() => {
                     this.props.downloadQr(
                       this.props.deviceWidth,
@@ -193,7 +193,6 @@ class ManageQRs extends Component {
 }
 
 const mapStatetoProps = (state) => {
-  debugger;
   console.log("state", state.Profile);
   const { profile } = state.Profile;
   // console.log("order", orderTransactions);

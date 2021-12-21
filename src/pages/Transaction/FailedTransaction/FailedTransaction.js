@@ -5,6 +5,8 @@ import TransactionTableRow from "../../Dashboard/TransactionTableRow";
 import TranTableHeading from "../../Dashboard/TranTableHeading";
 import SearchTransaction from "../SearchTransaction";
 import AmountAndTransaction from "../AmountAndTransaction";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 import axios from "axios";
 import { ip } from "../../../config/config";
 import { Link, withRouter } from "react-router-dom";
@@ -54,6 +56,19 @@ class FailedTransaction extends Component {
             totalTransaction="Total Transactions"
             noOfTransaction={"0"}
           />
+            <Loader
+              style={{
+                flex: 1,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              type="ThreeDots"
+              color="#FFF"
+              height={70}
+              width={70}
+              timeout={500} //3 secs
+            />
           <Row className="transaction-table-row">
             <Col>
               <Table

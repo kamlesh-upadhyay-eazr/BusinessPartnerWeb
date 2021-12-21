@@ -4,6 +4,8 @@ import ContentNav from "../ContentNav";
 import TransactionTableRow from "../../Dashboard/TransactionTableRow";
 import TranTableHeading from "../../Dashboard/TranTableHeading";
 import SearchTransaction from "../SearchTransaction";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 import AmountAndTransaction from "../AmountAndTransaction";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -41,6 +43,19 @@ class RefundedTransaction extends Component {
           totalTransaction="Total Transactions"
           noOfTransaction={totaltransactions}
         />
+          <Loader
+            style={{
+              flex: 1,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            type="ThreeDots"
+            color="#FFF"
+            height={70}
+            width={70}
+            timeout={500} //3 secs
+          />
         <Row className="transaction-table-row">
           <Col>
             <Table

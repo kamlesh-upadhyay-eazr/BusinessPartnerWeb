@@ -6,8 +6,10 @@ import { Table } from "reactstrap";
 import "./settlements.css";
 import SingleSettlement from "./SingleSettlement";
 import SearchSettlements from "./SearchSettlements";
-import Pagination from "@material-ui/lab/Pagination";
 import ReactPaginate from "react-paginate";
+
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -81,6 +83,20 @@ class Settlements extends Component {
 
         <Row>
           <Col className="settlement-table">
+            
+            <Loader
+              style={{
+                flex: 1,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              type="ThreeDots"
+              color="#FFF"
+              height={70}
+              width={70}
+              timeout={500} // 0.5 sec
+            />
             <Table bordered className="text-center">
               <thead style={{ background: "#000", color: "#fff" }}>
                 <tr>

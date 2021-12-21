@@ -12,13 +12,13 @@ import axios from "axios";
 import { ip } from "../../../config/config";
 import moment from "moment";
 
-export const fetchSettlements = (start, end) => {
-  debugger;
+export const fetchSettlements = (start, end, searched) => {
   return (dispatch) => {
     dispatch(setSettlementLoading);
 
     start = start ? start : "";
     end = end ? end : "";
+    searched = searched ? searched : "";
 
     axios
       .get(`${ip}/business/settlements`, {
@@ -45,11 +45,14 @@ export const fetchSettlements = (start, end) => {
 };
 
 //fetching bank details
-export const fetchingBankDetails = () => {
+export const fetchingBankDetails = (start, end, searched) => {
   return (dispatch) => {
     axios
-      .get(`${ip}/business/settlementsettings/fetchbankdetails`)
+      .get(`${ip}/business/settlementsettings/fetchbankdetails`, {
+        params: { start, end, searched: "", page: 1, limit: 10000 },
+      })
       .then((res) => {
+        debugger;
         console.log("res", res.data);
 
         dispatch({
@@ -59,6 +62,7 @@ export const fetchingBankDetails = () => {
       })
 
       .catch((err) => {
+        debugger;
         console.log("err", err);
         dispatch({
           type: FETCH_SETTLEMENT_TRANSACTIONS_FAILED,
@@ -67,7 +71,7 @@ export const fetchingBankDetails = () => {
       });
   };
 };
-debugger;
+
 
 //ADD bank details
 export const addBankDetail = (
@@ -76,7 +80,7 @@ export const addBankDetail = (
   accountNumber,
   ifscCode
 ) => {
-  debugger;
+
   console.log("name", bankName);
   return (dispatch) => {
     axios
@@ -87,7 +91,6 @@ export const addBankDetail = (
         ifscCode,
       })
       .then((res) => {
-        debugger;
         console.log("res", res.data);
 
         dispatch({
@@ -97,7 +100,6 @@ export const addBankDetail = (
       })
 
       .catch((err) => {
-        debugger;
         console.log("err", err);
         dispatch({
           type: ADD_BANK_DETAILS_FAILED,

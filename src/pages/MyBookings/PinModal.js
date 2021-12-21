@@ -143,7 +143,7 @@ const ModalExample = (props) => {
             </button>
             {/* </Link> */}
             <br />
-            <Link
+            <Link to=""
               style={{ color: "#7062e0", borderBottom: "1px solid #7062e0 " }}
               onClick={(e) => ResendOtp(e)}
             >

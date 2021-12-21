@@ -215,8 +215,8 @@ Making All Transaction Page Responsive
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .transaction-links .transaction-icon-links {
+@media screen and (max-width: 1400px) {
+  .transaction-links .transaction-icon-links  {
     display: none !important;
   }
   .transaction-page .transaction-links ul {
@@ -255,8 +255,11 @@ Making All Transaction Page Responsive
     justify-content: space-between;
   }
   .latest-transaction-row {
-    overflow-x: scroll;
+    display: flex;
+    /* overflow-x: scroll; */
+    overflow-y: scroll;
   }
+
   .transaction-page .all-transaction-form div {
     flex-direction: column;
     margin: 0;
@@ -268,3 +271,5 @@ Making All Transaction Page Responsive
     flex-direction: row !important;
   }
 }
+
+
