@@ -63,7 +63,13 @@
 // table
 .table-responsive>.table-bordered {
     border: 1px;
+    color: #FFF !important;
 }
+.table-responsive>.table-bordered th {
+    border:1px;
+    color:#FFF !important;
+}
+
 
 
 // Invoice

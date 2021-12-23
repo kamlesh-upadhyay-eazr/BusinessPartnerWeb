@@ -16,8 +16,17 @@ import {
   fetchFailedTransaction,
 } from "../../../store/redux/transaction/actionTransaction";
 class FailedTransaction extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+      Loading: false,
+    };
+  }
   componentDidMount() {
+    this.setState({ loading: true });
     this.props.fetchFailedTransaction();
+    this.setState({ loading: false });
 
     const totalsumtransactions =
       this.props.orderTransactions != 0 ? this.props.orderTransactions : 0;
@@ -56,19 +65,19 @@ class FailedTransaction extends Component {
             totalTransaction="Total Transactions"
             noOfTransaction={"0"}
           />
-            <Loader
-              style={{
-                flex: 1,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              type="ThreeDots"
-              color="#FFF"
-              height={70}
-              width={70}
-              timeout={500} //3 secs
-            />
+          <Loader
+            style={{
+              flex: 1,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            type="ThreeDots"
+            color="#FFF"
+            height={70}
+            width={70}
+            timeout={500} //3 secs
+          />
           <Row className="transaction-table-row">
             <Col>
               <Table

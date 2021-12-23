@@ -17,19 +17,20 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <div className="vertical-menu" style={{ background: "#1D1D1F" }}>
           <div data-simplebar className="h-100">
             {this.props.type !== "condensed" ? (
               <SimpleBar style={{ maxHeight: "100%" }}>
                 <SidebarContent />
-              </SimpleBar>
+              </SimpleBar> 
             ) : (
-              <SimpleBar />
+              <SidebarContent />
+              
             )}
           </div>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }

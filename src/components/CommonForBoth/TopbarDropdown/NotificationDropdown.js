@@ -48,9 +48,10 @@ class NotificationDropdown extends Component {
             <span className="noti-dot"></span>
           </DropdownToggle>
           <DropdownMenu
-            right
+            // right
             className="dropdown-menu-lg p-0 kamlesh"
             aria-labelledby="page-header-notifications-dropdown"
+            style={{ }}
           >
             <div className="p-3">
               <Row className="align-items-center">

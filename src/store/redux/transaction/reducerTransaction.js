@@ -7,6 +7,7 @@ import {
   ORDER_TRANSACTIONS_CHANGE_STATUS,
   CHANGE_ORDER_TRANSACTSTATUS_FAILED,
   TOTAL_SUM,
+  TOTAL_COMPLETED_TRANSACTIONS,
   TOTAL_TRANSACTIONS_SUM,
   TOTAL_COMPLETED_SUM,
   TOTAL_FAILED_SUM,
@@ -90,13 +91,21 @@ export default (state = Initial_State, action) => {
         totalCompletedSum: action.payload.totalCompletedSum,
       };
 
-      case TOTAL_COMPLETED_SUM:
-        return {
-          ...state,
-          loading: false,
-          errors: {},
-          totalCompletedSum: action.payload,
-        };
+    case TOTAL_COMPLETED_SUM:
+      return {
+        ...state,
+        // loading: false,
+        errors: {},
+        totalCompletedSum: action.payload,
+      };
+
+    case TOTAL_COMPLETED_TRANSACTIONS:
+      return {
+        ...state,
+        loading: false,
+        errors: {},
+        totalCompletedTransactionsSum: action.payload,
+      };
 
     case FETCH_COMPLETED_TRANSACTIONS_FAILED:
       return {
@@ -104,7 +113,6 @@ export default (state = Initial_State, action) => {
         loading: false,
         errors: action.payload,
       };
-
 
     case TOTAL_FAILED_SUM:
       return {

@@ -12,6 +12,7 @@ const TranTable = (props) => {
 
   
   const [pageNumber, setPageNumber] = useState(0);
+  const [Loading, setLoading] = useState(false);
   const usersPerPage = 10;
   const pagesVisited = pageNumber * usersPerPage;
   

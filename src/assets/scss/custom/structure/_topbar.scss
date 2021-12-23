@@ -152,7 +152,7 @@
 
 .notification-item {
     .media {
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 2rem;
 
         &:hover {
             background-color: $gray-300;
@@ -279,14 +279,7 @@ body[data-sidebar="dark"] {
         }
     }
 }
-// .element.style {
-//     position: absolute !important;
-// will-change: transform !important;
-// top: 0px !important;
-// left: 0px !important;
-// transform: translate3d(3px, 5px, 0px) !important;
-// margin-left: 75% !important;
-// }
+
 
 
 

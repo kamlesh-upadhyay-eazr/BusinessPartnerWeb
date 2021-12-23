@@ -7,11 +7,14 @@ import classname from "classnames";
 import { withNamespaces } from "react-i18next";
 
 import { connect } from "react-redux";
+import "./navbar.scss";
 
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      showSubMenu: false,
+    };
   }
 
   componentDidUpdate(prevProps) {
@@ -84,7 +87,7 @@ class Navbar extends Component {
                     </Link>
                   </li>
 
-                  <li className="nav-item dropdown">
+                  {/* <li className="nav-item dropdown">
                     <Link
                       onClick={(e) => {
                         e.preventDefault();
@@ -670,7 +673,7 @@ class Navbar extends Component {
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </Collapse>
             </nav>

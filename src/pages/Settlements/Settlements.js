@@ -75,7 +75,6 @@ class Settlements extends Component {
 
     const getSearchSettlementValues = (value) => {
       this.setState({ searchSettlements: value });
-      debugger;
     };
 
     return (
@@ -123,7 +122,7 @@ class Settlements extends Component {
                   <th>Status</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="test">
                 {this.state.filterSettlements ? (
                   this.state.filterSettlements.map((item) => {
                     return (
@@ -166,8 +165,7 @@ class Settlements extends Component {
                   >
                     No data found
                   </h6>
-                )
-                }
+                )}
               </tbody>
             </Table>
             <ReactPaginate

@@ -1,7 +1,9 @@
-import React, { useState, useRef } from "react";
+
+import React, {Component, useState, useRef } from "react";
 import submitBtn from "../../assets/images/chaticon.png";
 import ValidateEaza from "../../Validations/ValidateEaza";
 import WebCam from "react-webcam";
+import Mic from './MicroPhone'
 
 const Footer = ({ getMessages, getImages }) => {
   const [message, setMessage] = useState("");
@@ -67,6 +69,9 @@ const Footer = ({ getMessages, getImages }) => {
           <i class="fas fa-image"></i>
         </div>
         <div className="attach-content">
+          <div>
+            <Mic />
+          </div>
           <i class="fas fa-microphone"></i>
         </div>
         <div className="attach-content">

@@ -1,7 +1,9 @@
 /*====================
 All Settlements Page
 =====================*/
-
+.test {
+  color: #fff !important;
+}
 ::-webkit-scrollbar {
   display: none;
 }

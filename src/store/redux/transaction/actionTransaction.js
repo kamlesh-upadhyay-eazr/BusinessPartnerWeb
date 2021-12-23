@@ -9,6 +9,7 @@ import {
   CHANGE_ORDER_TRANSACTSTATUS_FAILED,
   TOTAL_SUM,
   TOTAL_TRANSACTIONS_SUM,
+  TOTAL_COMPLETED_TRANSACTIONS,
   FETCH_COMPLETED_TRANSACTIONS,
   FETCH_COMPLETED_TRANSACTIONS_FAILED,
   FETCH_FAILED_TRANSACTIONS,
@@ -111,9 +112,14 @@ export const fetchCompletedTransaction = () => {
         res.data.transactions.forEach((transaction) => {
           sum += parseFloat(transaction.amount);
         });
+        var sums = 0;
+        res.data.transactions.forEach((transaction) => {
+          sums += parseFloat(transaction.amount);
+        })
         var data = {
           transactions: res.data.transactions,
           totalCompletedSum: sum,
+          totalTransactionsSum: sums,
         };
         dispatch({
           type: FETCH_COMPLETED_TRANSACTIONS,
